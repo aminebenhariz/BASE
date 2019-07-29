@@ -1,36 +1,36 @@
 <?php
 /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-**
-** (see the file 'base_main.php' for license details)
-**
-** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
-**                Sean Muller <samwise_diver@users.sourceforge.net>
-** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Purpose: Displays form for graphing
-********************************************************************************
-** Authors:
-********************************************************************************
-** Kevin Johnson <kjohnson@secureideas.net
-**
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (see the file 'base_main.php' for license details)
+ **
+ ** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
+ **                Sean Muller <samwise_diver@users.sourceforge.net>
+ ** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Purpose: Displays form for graphing
+ ********************************************************************************
+ ** Authors:
+ ********************************************************************************
+ ** Kevin Johnson <kjohnson@secureideas.net
+ **
+ ********************************************************************************
+ */
 
-  include_once ("$BASE_path/base_graph_common.php"); 
+include_once ("$BASE_path/base_graph_common.php");
 
 
 
-  echo '<FORM ACTION="base_graph_main.php" METHOD="post">';
+echo '<FORM ACTION="base_graph_main.php" METHOD="post">';
 
-  echo '<TABLE WIDTH="100%" BORDER="2" class="query" cellpadding="20" summary="Outer table">
+echo '<TABLE WIDTH="100%" BORDER="2" class="query" cellpadding="20" summary="Outer table">
           <TR>
            <TD COLSPAN=2>';
-  echo '<TABLE WIDTH="100%" BORDER="1" SUMMARY="1st inner table"><TR>';
-  //  echo '<B>'._CHARTTYPE.'</B>&nbsp;
-  echo '<TD><B>What do you want to know:</B></TD><TD>
+echo '<TABLE WIDTH="100%" BORDER="1" SUMMARY="1st inner table"><TR>';
+//  echo '<B>'._CHARTTYPE.'</B>&nbsp;
+echo '<TD><B>What do you want to know:</B></TD><TD>
         <SELECT NAME="chart_type">
          <OPTION VALUE=" "  '. chk_select($chart_type, " ").'>'._CHARTTYPES.'
          <OPTION VALUE="' . CHARTTYPE_HOUR . '" ' . chk_select($chart_type, CHARTTYPE_HOUR).'>'._CHRTTYPEHOUR.'
@@ -52,24 +52,24 @@
          <OPTION VALUE="' . CHARTTYPE_SENSOR . '" ' . chk_select($chart_type, CHARTTYPE_SENSOR).'>'._CHRTTYPESENSOR.'
          <OPTION VALUE="' . CHARTTYPE_UNIQUE_SIGNATURE .'" ' . chk_select($chart_type, CHARTTYPE_UNIQUE_SIGNATURE).'>'. 'Unique alerts vs. number of alerts' . '
          <OPTION VALUE="' . CHARTTYPE_CLASSIFICATION . '" ' . chk_select($chart_type, CHARTTYPE_CLASSIFICATION).'>'._CHRTTYPESIG;
- 
 
-	echo '</SELECT>
+
+echo '</SELECT>
 	      </TD></TR>';
-  
-  
-  //echo '&nbsp;&nbsp;<B>'._PLOTTYPE.'</B> &nbsp;&nbsp;
-  echo '<TR><TD><B>How should it be displayed?</B></TD><TD>As&nbsp;
+
+
+//echo '&nbsp;&nbsp;<B>'._PLOTTYPE.'</B> &nbsp;&nbsp;
+echo '<TR><TD><B>How should it be displayed?</B></TD><TD>As&nbsp;
             <INPUT TYPE="radio" NAME="chart_style"
                    VALUE="bar" '.chk_check($chart_style, "bar").'> '._TYPEBAR.' &nbsp;&nbsp;
             <INPUT TYPE="radio" NAME="chart_style"
                    VALUE="line" '.chk_check($chart_style, "line").'> '._TYPELINE.' &nbsp;&nbsp;
             <INPUT TYPE="radio" NAME="chart_style"
                    VALUE="pie" '.chk_check($chart_style, "pie").'> '._TYPEPIE.' ';
-  echo '</TD></TR>';
+echo '</TD></TR>';
 
-  //  echo '&nbsp;&nbsp;<B>'._CHARTSIZE.'</B>
-  echo '<TD><B>... with a size of:</B></TD><TD>(width x height)
+//  echo '&nbsp;&nbsp;<B>'._CHARTSIZE.'</B>
+echo '<TD><B>... with a size of:</B></TD><TD>(width x height)
         &nbsp;<INPUT TYPE="text" NAME="width" SIZE=4 VALUE="'.$width.'">
         &nbsp;<B>x</B>
         &nbsp;<INPUT TYPE="text" NAME="height" SIZE=4 VALUE="'.$height.'">
@@ -90,20 +90,20 @@
 */
 
 
-    echo '<TR><TD><B>Do you want to know<BR>the data just of a<BR>particular time frame?</B>&nbsp;(optional)</TD><TD>';
-    echo '<b>'._CHRTBEGIN.'</B>&nbsp;
+echo '<TR><TD><B>Do you want to know<BR>the data just of a<BR>particular time frame?</B>&nbsp;(optional)</TD><TD>';
+echo '<b>'._CHRTBEGIN.'</B>&nbsp;
         <SELECT NAME="chart_begin_hour">
          <OPTION VALUE=" "  '.chk_select($chart_begin_hour, " ").'>'._CHARTHOUR."\n";
-        for ( $i = 0; $i <= 23; $i++ )
-            echo "<OPTION VALUE=\"$i\" ".chk_select($chart_begin_hour, $i)." >$i\n";
+for ( $i = 0; $i <= 23; $i++ )
+    echo "<OPTION VALUE=\"$i\" ".chk_select($chart_begin_hour, $i)." >$i\n";
 
-  echo '</SELECT>
+echo '</SELECT>
         <SELECT NAME="chart_begin_day">
          <OPTION VALUE=" "  '.chk_select($chart_begin_day, " ").'>'._CHARTDAY."\n";
-        for ( $i = 1; $i <= 31; $i++ )
-            echo "<OPTION VALUE=\"$i\" ".chk_select($chart_begin_day, $i).">$i\n";
+for ( $i = 1; $i <= 31; $i++ )
+    echo "<OPTION VALUE=\"$i\" ".chk_select($chart_begin_day, $i).">$i\n";
 
-  echo '</SELECT>
+echo '</SELECT>
         <SELECT NAME="chart_begin_month">
          <OPTION VALUE=" "  '.chk_select($chart_begin_month, " ").'>'._CHARTMONTH.'
          <OPTION VALUE="01" '.chk_select($chart_begin_month, "01").'>'._JANUARY.'
@@ -120,22 +120,22 @@
          <OPTION VALUE="12" '.chk_select($chart_begin_month, "12").'>'._DECEMBER.'
         </SELECT>
         <SELECT NAME="chart_begin_year">'.
-        dispYearOptions($chart_begin_year)
-        .'</SELECT>';
+    dispYearOptions($chart_begin_year)
+    .'</SELECT>';
 
-  echo '<br><b>'._CHRTEND.'</B>&nbsp;&nbsp;&nbsp;&nbsp;
+echo '<br><b>'._CHRTEND.'</B>&nbsp;&nbsp;&nbsp;&nbsp;
         <SELECT NAME="chart_end_hour">
          <OPTION VALUE=" "  '.chk_select($chart_end_hour, " ").'>'._CHARTHOUR."\n";
-        for ( $i = 0; $i <= 23; $i++ )
-           echo "<OPTION VALUE=$i ".chk_select($chart_end_hour, $i).">$i\n";
+for ( $i = 0; $i <= 23; $i++ )
+    echo "<OPTION VALUE=$i ".chk_select($chart_end_hour, $i).">$i\n";
 
-  echo '</SELECT>
+echo '</SELECT>
         <SELECT NAME="chart_end_day">
          <OPTION VALUE=" "  '.chk_select($chart_end_day, " ").'>'._CHARTDAY."\n";
-        for ( $i = 1; $i <= 31; $i++ )
-           echo "<OPTION VALUE=$i ".chk_select($chart_end_day, $i).">$i\n";
+for ( $i = 1; $i <= 31; $i++ )
+    echo "<OPTION VALUE=$i ".chk_select($chart_end_day, $i).">$i\n";
 
-  echo '</SELECT>
+echo '</SELECT>
         <SELECT NAME="chart_end_month">
          <OPTION VALUE=" "  '.chk_select($chart_end_month, " ").'>'._CHARTMONTH.'
          <OPTION VALUE="01" '.chk_select($chart_end_month, "01").'>'._JANUARY.'
@@ -152,44 +152,44 @@
          <OPTION VALUE="12" '.chk_select($chart_end_month, "12").'>'._DECEMBER.'
         </SELECT>
         <SELECT NAME="chart_end_year">'.
-        dispYearOptions($chart_end_year)
-        .'</SELECT></TD></TR>';
-      
-	echo '<TR><TD><B>'._CHARTTITLE.'</B></TD><TD>
+    dispYearOptions($chart_end_year)
+    .'</SELECT></TD></TR>';
+
+echo '<TR><TD><B>'._CHARTTITLE.'</B></TD><TD>
 		<INPUT TYPE="text" NAME="user_chart_title" SIZE="35" VALUE="'.$user_chart_title.'"></TD></TR>';
-		
-		
-		
-	
-  //  echo '&nbsp;&nbsp;<b>'._CHARTPERIOD.'</B>&nbsp;
-  echo '<TR><TD><B>How many columns or elements do you want to see?</B>&nbsp;</TD><TD>';
-  echo '<SELECT NAME="chart_interval">'.
-	'<OPTION VALUE="0"  '.chk_select($chart_interval, "0").'>{all of them}' . /* _PERIODNO. */
-  '<OPTION VALUE="5"  '.chk_select($chart_interval, "5").'> 5 elements' .  
-	'<OPTION VALUE="10" '.chk_select($chart_interval, "10").'>10 elements' . /* _PERIODWEEK. */
-	'<OPTION VALUE="15" '.chk_select($chart_interval, "15").'>15 elements' . /* _PERIODDAY. */
-	'<OPTION VALUE="20" '.chk_select($chart_interval, "20").'>20 elements' . /* _PERIOD168. */
-  '<OPTION VALUE="25" '.chk_select($chart_interval, "25").'>25 elements' .
-  '<OPTION VALUE="30" '.chk_select($chart_interval, "30").'>30 elements' .
-	'</SELECT><BR></TD></TR>';
-
-	echo '<TR><TD><B>... and starting from which element on?</B>&nbsp;</TD>' .
-       '<TD>From element no.&nbsp;<INPUT TYPE="text" NAME="element_start" SIZE="10" VALUE="'.$element_start.'"></TD></TR>';
-
-
-  // submit button
-  echo '<TR align=middle><TD colspan="2">';
-  echo '<BR><BR><div class="center"><INPUT TYPE="submit" NAME="submit" VALUE="'._GRAPHALERTS.'" align=center></div><BR><BR>';
-	echo '</TR></TABLE>';
 
 
 
 
+//  echo '&nbsp;&nbsp;<b>'._CHARTPERIOD.'</B>&nbsp;
+echo '<TR><TD><B>How many columns or elements do you want to see?</B>&nbsp;</TD><TD>';
+echo '<SELECT NAME="chart_interval">'.
+    '<OPTION VALUE="0"  '.chk_select($chart_interval, "0").'>{all of them}' . /* _PERIODNO. */
+    '<OPTION VALUE="5"  '.chk_select($chart_interval, "5").'> 5 elements' .
+    '<OPTION VALUE="10" '.chk_select($chart_interval, "10").'>10 elements' . /* _PERIODWEEK. */
+    '<OPTION VALUE="15" '.chk_select($chart_interval, "15").'>15 elements' . /* _PERIODDAY. */
+    '<OPTION VALUE="20" '.chk_select($chart_interval, "20").'>20 elements' . /* _PERIOD168. */
+    '<OPTION VALUE="25" '.chk_select($chart_interval, "25").'>25 elements' .
+    '<OPTION VALUE="30" '.chk_select($chart_interval, "30").'>30 elements' .
+    '</SELECT><BR></TD></TR>';
 
-  echo '<TR><TD COLSPAN=2>
+echo '<TR><TD><B>... and starting from which element on?</B>&nbsp;</TD>' .
+    '<TD>From element no.&nbsp;<INPUT TYPE="text" NAME="element_start" SIZE="10" VALUE="'.$element_start.'"></TD></TR>';
+
+
+// submit button
+echo '<TR align=middle><TD colspan="2">';
+echo '<BR><BR><div class="center"><INPUT TYPE="submit" NAME="submit" VALUE="'._GRAPHALERTS.'" align=center></div><BR><BR>';
+echo '</TR></TABLE>';
+
+
+
+
+
+echo '<TR><TD COLSPAN=2>
   <ul id="zMenu">
     <li>'._AXISCONTROLS.':<BR>';
-  echo '<TABLE WIDTH="100%" BORDER="1" SUMMARY="2nd inner table">
+echo '<TABLE WIDTH="100%" BORDER="1" SUMMARY="2nd inner table">
         <TR>
          <TD ALIGN="CENTER" WIDTH="50%"><B>'._CHRTX.'</B></TD>
          <TD ALIGN="CENTER" WIDTH="50%"><B>'._CHRTY.'</B></TD>
@@ -200,28 +200,28 @@
            <SELECT NAME="data_source">
            <OPTION VALUE=" " '.chk_select($data_source, " ").'>{ data source (AG) }';
 
-           $temp_sql = "SELECT ag_id, ag_name FROM acid_ag";
-           $tmp_result = $db->baseExecute($temp_sql);
-           if ( ( $tmp_result ) )
-           {
-              while ( $myrow = $tmp_result->baseFetchRow() )
-                echo '<OPTION VALUE="'.$myrow[0].'" '.chk_select($data_source, $myrow[0]).'>'.
-                     '['.$myrow[0].'] '.$myrow[1];
+$temp_sql = "SELECT ag_id, ag_name FROM acid_ag";
+$tmp_result = $db->baseExecute($temp_sql);
+if ( ( $tmp_result ) )
+{
+    while ( $myrow = $tmp_result->baseFetchRow() )
+        echo '<OPTION VALUE="'.$myrow[0].'" '.chk_select($data_source, $myrow[0]).'>'.
+            '['.$myrow[0].'] '.$myrow[1];
 
-              $tmp_result->baseFreeRows();
-           }
+    $tmp_result->baseFreeRows();
+}
 
-           echo '</SELECT><BR>'.
-                 '<B>'._CHRTMINTRESH.':</B>
+echo '</SELECT><BR>'.
+    '<B>'._CHRTMINTRESH.':</B>
                  <INPUT TYPE="text" NAME="min_size" SIZE="5" VALUE='.$min_size.'>
                  &nbsp;&nbsp;
                  <BR>
                  <INPUT TYPE="checkbox" NAME="rotate_xaxis_lbl" VALUE="1" '.
-                   chk_check($rotate_xaxis_lbl, "1").'>
+    chk_check($rotate_xaxis_lbl, "1").'>
                  &nbsp;
                  <B>'._CHRTROTAXISLABEL.'</B><BR>
                  <INPUT TYPE="checkbox" NAME="xaxis_grid" VALUE="1"  '.
-                   chk_check($xaxis_grid, "1").'>
+    chk_check($xaxis_grid, "1").'>
                   &nbsp;
                  <B>'._CHRTSHOWX.'</B><BR>
                  <!--
@@ -245,7 +245,7 @@
          -->
          <!--
            <INPUT TYPE="checkbox" NAME="yaxis_scale" VALUE="1" '.
-             chk_check($yaxis_scale, "1").'>&nbsp;
+    chk_check($yaxis_scale, "1").'>&nbsp;
            <B>'._CHRTYLOG.'</B>
            <BR>
          --> 
@@ -254,7 +254,7 @@
            
 
            <INPUT TYPE="checkbox" NAME="yaxis_grid" VALUE="1"  '.
-             chk_check($yaxis_grid, "1").'>&nbsp;
+    chk_check($yaxis_grid, "1").'>&nbsp;
            <B>'._CHRTYGRID.'</B>
          </TD>
         </TR>
@@ -264,7 +264,7 @@
         </TD></TR>
      </TABLE>';
 
-  echo '</FORM><P><HR>';
+echo '</FORM><P><HR>';
 echo '
  <!-- ************ JavaScript for Hiding Details ******************** -->
  <script type="text/javascript">

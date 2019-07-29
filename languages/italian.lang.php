@@ -1,27 +1,27 @@
 <?php
 /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-**
-** (see the file 'base_main.php' for license details)
-**
-** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
-**                Sean Muller <samwise_diver@users.sourceforge.net>
-** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Purpose: English language file
-**      To translate into another language, copy this file and
-**          translate each variable into your chosen language.
-**          Leave any variable not translated so that the system will have
-**          something to display.
-********************************************************************************
-** Authors:
-********************************************************************************
-** Kevin Johnson <kjohnson@secureideas.net
-** Joel Esler <joelesler@users.sourceforge.net>
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (see the file 'base_main.php' for license details)
+ **
+ ** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
+ **                Sean Muller <samwise_diver@users.sourceforge.net>
+ ** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Purpose: English language file
+ **      To translate into another language, copy this file and
+ **          translate each variable into your chosen language.
+ **          Leave any variable not translated so that the system will have
+ **          something to display.
+ ********************************************************************************
+ ** Authors:
+ ********************************************************************************
+ ** Kevin Johnson <kjohnson@secureideas.net
+ ** Joel Esler <joelesler@users.sourceforge.net>
+ ********************************************************************************
+ */
 
 //locale
 DEFINE('_LOCALESTR1', 'eng_ENG.ISO8859-1'); //NEW
@@ -57,7 +57,7 @@ DEFINE('_TIMESTAMP','Orario');
 DEFINE('_NBSOURCEADDR','Indirizzo Sorgente');
 DEFINE('_NBDESTADDR','Indirizzo Destinatario');
 DEFINE('_NBLAYER4','Layer 4 Proto');
-DEFINE('_PRIORITY','Priorità');
+DEFINE('_PRIORITY','PrioritÃ ');
 DEFINE('_EVENTTYPE','tipo evento');
 DEFINE('_JANUARY','Gennaio');
 DEFINE('_FEBRUARY','Febbraio');
@@ -123,8 +123,8 @@ DEFINE('_LASTTCP','Last TCP Alerts'); //NEW
 DEFINE('_LASTUDP','Last UDP Alerts'); //NEW
 DEFINE('_LASTICMP','Last ICMP Alerts'); //NEW
 DEFINE('_QUERYDB','Query DB'); //NEW
-DEFINE('_QUERYDBP','Query+DB'); //NEW - Equals to _QUERYDB where spaces are '+'s. 
-                                //Should be something like: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
+DEFINE('_QUERYDBP','Query+DB'); //NEW - Equals to _QUERYDB where spaces are '+'s.
+//Should be something like: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
 DEFINE('_SELECTED','Selected'); //NEW
 DEFINE('_ALLONSCREEN','ALL on Screen'); //NEW
 DEFINE('_ENTIREQUERY','Entire Query'); //NEW
@@ -172,8 +172,8 @@ DEFINE('_FOOTER','( by <A class="largemenuitem" href="mailto:base@secureideas.ne
 DEFINE('_LOGINERROR','Dati di login errati!<br>Per favore riprova');
 
 // base_main.php
-DEFINE('_MOSTRECENT','Il più recente ');
-DEFINE('_MOSTFREQUENT','Il più frequente ');
+DEFINE('_MOSTRECENT','Il piÃ¹ recente ');
+DEFINE('_MOSTFREQUENT','Il piÃ¹ frequente ');
 DEFINE('_ALERTS',' Avvertimenti:');
 DEFINE('_ADDRESSES',' Indirizzi:');
 DEFINE('_ANYPROTO','qualsiasi protocollo');
@@ -187,8 +187,8 @@ DEFINE('_L72ALERTS','Avvisi ultime 72 ore: ');
 DEFINE('_UNIALERTS',' Unici Avvisi');
 DEFINE('_LSOURCEPORTS','Ultime Porte Sorgente: ');
 DEFINE('_LDESTPORTS','Ultime Porte di Destinazione: ');
-DEFINE('_FREGSOURCEP','Porte Sorgenti più frequenti: ');
-DEFINE('_FREGDESTP','Porte di Destinazione più frequenti: ');
+DEFINE('_FREGSOURCEP','Porte Sorgenti piÃ¹ frequenti: ');
+DEFINE('_FREGDESTP','Porte di Destinazione piÃ¹ frequenti: ');
 DEFINE('_QUERIED','Query per Database');
 DEFINE('_DATABASE',':');
 DEFINE('_SCHEMAV','Versione Schema:');
@@ -202,11 +202,11 @@ DEFINE('_TRAFFICPROBPRO','Traffic Profile by Protocol'); //NEW
 DEFINE('_ADDEDSF','Aggiunto con successo');
 DEFINE('_NOPWDCHANGE','Impossibile cambiare la password: ');
 DEFINE('_NOUSER','L\'utente non esiste!');
-DEFINE('_OLDPWD','La vecchia password inserita non è corretta!');
+DEFINE('_OLDPWD','La vecchia password inserita non Ã¨ corretta!');
 DEFINE('_PWDCANT','Impossibile cambiare la password: ');
 DEFINE('_PWDDONE','Password cambiata!');
-DEFINE('_ROLEEXIST','Ruolo già esistente');
-DEFINE('_ROLEIDEXIST','ID Ruolo già esistente');
+DEFINE('_ROLEEXIST','Ruolo giÃ  esistente');
+DEFINE('_ROLEIDEXIST','ID Ruolo giÃ  esistente');
 DEFINE('_ROLEADDED','Ruolo aggiunto con successo');
 
 //base_roleadmin.php
@@ -230,9 +230,9 @@ DEFINE('_BASEADMINTEXT','Scegliere un\'opzione dalla destra.');
 
 //base_action.inc.php
 DEFINE('_NOACTION','Nessuna azione specificata sugli avvertimenti');
-DEFINE('_INVALIDACT',' non è un\'azione valida');
-DEFINE('_ERRNOAG','Impossibile aggiungere l\'avvertimento perchè non è definito il gruppo');
-DEFINE('_ERRNOEMAIL','Impossibile inviare e-amil di notifica perchè non sono specificati indirizzi');
+DEFINE('_INVALIDACT',' non Ã¨ un\'azione valida');
+DEFINE('_ERRNOAG','Impossibile aggiungere l\'avvertimento perchÃ¨ non Ã¨ definito il gruppo');
+DEFINE('_ERRNOEMAIL','Impossibile inviare e-amil di notifica perchÃ¨ non sono specificati indirizzi');
 DEFINE('_ACTION','AZIONE');
 DEFINE('_CONTEXT','contesto');
 DEFINE('_ADDAGID','Aggiungi A Gruppo (per ID)');
@@ -287,10 +287,10 @@ DEFINE('_DBALCHECK','Controllo librerie di astrazione database in');
 DEFINE('_ERRSQLDBALLOAD1','<P><B>Impossibile caricare le librerie di Astrazione DB: </B> da ');
 DEFINE('_ERRSQLDBALLOAD2','<P>Controllare la variabile di astrazione DB <CODE>$DBlib_path</CODE> in <CODE>base_conf.php</CODE>
             <P>
-            L\'interfaccia attualmente in uso è ADODB, scaricabile direttamente da
+            L\'interfaccia attualmente in uso Ã¨ ADODB, scaricabile direttamente da
             <A HREF="http://adodb.sourceforge.net/">http://adodb.sourceforge.net/</A>');
 DEFINE('_ERRSQLDBTYPE','Tipo Database specificato non valido');
-DEFINE('_ERRSQLDBTYPEINFO1','La variabile <CODE>\$DBtype</CODE> in <CODE>base_conf.php</CODE> è impostata al tipo sconosciuto di database ');
+DEFINE('_ERRSQLDBTYPEINFO1','La variabile <CODE>\$DBtype</CODE> in <CODE>base_conf.php</CODE> Ã¨ impostata al tipo sconosciuto di database ');
 DEFINE('_ERRSQLDBTYPEINFO2','Solo i seguenti database sono supportati: <PRE>
                 MySQL         : \'mysql\'
                 PostgreSQL    : \'postgres\'
@@ -355,9 +355,9 @@ DEFINE('_INPUTCRTENC','Input Criteria Encoding Type'); //NEW
 DEFINE('_CONVERT2WS','Convert To (when searching)'); //NEW
 
 //base_state_common.inc.php
-DEFINE('_PHPERRORCSESSION','ERRORE PHP: rilevata sessione utente PHP. BASE non è impostato per questo tipo di gestione.  Impostare <CODE>use_user_session=1</CODE> in <CODE>base_conf.php</CODE>');
-DEFINE('_PHPERRORCSESSIONCODE','ERRORE PHP: un gestore sessione utente è già configurato, ma il codice handle specificato in <CODE>user_session_path</CODE> non è valido.');
-DEFINE('_PHPERRORCSESSIONVAR','ERRORE PHP: un gestore sessione utente è già configurato, ma la sua implementazione non è specificata in BASE. Se si vuole utilizzare un gestore di sessioni utente, impostare <CODE>user_session_path</CODE> in <CODE>base_conf.php</CODE>.');
+DEFINE('_PHPERRORCSESSION','ERRORE PHP: rilevata sessione utente PHP. BASE non Ã¨ impostato per questo tipo di gestione.  Impostare <CODE>use_user_session=1</CODE> in <CODE>base_conf.php</CODE>');
+DEFINE('_PHPERRORCSESSIONCODE','ERRORE PHP: un gestore sessione utente Ã¨ giÃ  configurato, ma il codice handle specificato in <CODE>user_session_path</CODE> non Ã¨ valido.');
+DEFINE('_PHPERRORCSESSIONVAR','ERRORE PHP: un gestore sessione utente Ã¨ giÃ  configurato, ma la sua implementazione non Ã¨ specificata in BASE. Se si vuole utilizzare un gestore di sessioni utente, impostare <CODE>user_session_path</CODE> in <CODE>base_conf.php</CODE>.');
 DEFINE('_PHPSESSREG','Sessione Registrata');
 
 //base_state_criteria.inc.php
@@ -375,9 +375,9 @@ DEFINE('_QUERYSTATE','Stato Query');
 DEFINE('_DISPACTION','{ action }'); //NEW
 
 //base_ag_common.php
-DEFINE('_ERRAGNAMESEARCH','Il nome Gruppo specificato non è valido.  Riprovare!');
+DEFINE('_ERRAGNAMESEARCH','Il nome Gruppo specificato non Ã¨ valido.  Riprovare!');
 DEFINE('_ERRAGNAMEEXIST','Il Gruppo specificato non esiste.');
-DEFINE('_ERRAGIDSEARCH','L\'ID gruppo non è valido.  Riprovare!');
+DEFINE('_ERRAGIDSEARCH','L\'ID gruppo non Ã¨ valido.  Riprovare!');
 DEFINE('_ERRAGLOOKUP','Errore di ricerca Gruppo per ID');
 DEFINE('_ERRAGINSERT','Errore inserimento nuovo Gruppo');
 
@@ -407,20 +407,20 @@ DEFINE('_DBINDEXCREATE','INDICE creato correttamente per');
 DEFINE('_ERRSNORTVER','Potrebbe essere una vecchia versione. Solo i database avvertimenti creati da Snort 1.7-beta0 o successivi sono supportati');
 DEFINE('_ERRSNORTVER1','Il database sottostante');
 DEFINE('_ERRSNORTVER2','sembra essere incompleto/non valido');
-DEFINE('_ERRDBSTRUCT1','La versione database è valida, ma la struttura DB BASE');
-DEFINE('_ERRDBSTRUCT2','non è presente. Utilizzare il <A HREF="base_db_setup.php">Setup</A> per configurare e ottimizzare il database.');
+DEFINE('_ERRDBSTRUCT1','La versione database Ã¨ valida, ma la struttura DB BASE');
+DEFINE('_ERRDBSTRUCT2','non Ã¨ presente. Utilizzare il <A HREF="base_db_setup.php">Setup</A> per configurare e ottimizzare il database.');
 DEFINE('_ERRPHPERROR','ERRORE PHP');
 DEFINE('_ERRPHPERROR1','Versione non compatibile');
 DEFINE('_ERRVERSION','La versione');
-DEFINE('_ERRPHPERROR2','di PHP è troppo vecchia.  Aggiornarla alla 4.0.4 or successiva');
+DEFINE('_ERRPHPERROR2','di PHP Ã¨ troppo vecchia.  Aggiornarla alla 4.0.4 or successiva');
 DEFINE('_ERRPHPMYSQLSUP','<B>Pacchetto PHP mancante</B>: <FONT>il modulo MySQL, necessario per la lettura
-               del database Avvertimenti, non è incluso in PHP.
+               del database Avvertimenti, non Ã¨ incluso in PHP.
                Per favore ricompilare PHP includendo MySQL (<CODE>--with-mysql</CODE>)</FONT>');
 DEFINE('_ERRPHPPOSTGRESSUP','<B>Pacchetto PHP mancante</B>: <FONT>il modulo PostgreSQL necessario per la lettura
-               del database Avvertimenti, non è incluso in PHP.
+               del database Avvertimenti, non Ã¨ incluso in PHP.
                Per favore ricompilare PHP includendo PostgreSQL (<CODE>--with-pgsql</CODE>)</FONT>');
 DEFINE('_ERRPHPMSSQLSUP','<B>Pacchetto PHP mancante</B>: <FONT>il modulo MS SQL necessario per la lettura
-               del database Avvertimenti, non è incluso in PHP.
+               del database Avvertimenti, non Ã¨ incluso in PHP.
                Per favore ricompilare PHP includendo MySQL (<CODE>--enable-sql</CODE>)</FONT>');
 DEFINE('_ERRPHPORACLESUP','<B>PHP build incomplete</B>: <FONT>the prerequisite Oracle support required to 
                    read the alert database was not built into PHP.  
@@ -443,7 +443,7 @@ DEFINE('_TYPELINE','line'); //NEW
 DEFINE('_TYPEPIE','pie'); //NEW
 DEFINE('_CHARTHOUR','{hora}'); //NEW
 DEFINE('_CHARTDAY','{dia}'); //NEW
-DEFINE('_CHARTMONTH','{mÃªs}'); //NEW
+DEFINE('_CHARTMONTH','{mÃƒÂªs}'); //NEW
 DEFINE('_GRAPHALERTS','Graph Alerts'); //NEW
 DEFINE('_AXISCONTROLS','X / Y AXIS CONTROLS'); //NEW
 DEFINE('_CHRTTYPEHOUR','Tempo (ora) vs. Numero Avvertimenti');
@@ -465,7 +465,7 @@ DEFINE('_CHRTDS','Sorgente Dati:');
 DEFINE('_CHRTX','Asse X');
 DEFINE('_CHRTY','Asse Y');
 DEFINE('_CHRTMINTRESH','Valore Treshold minimo');
-DEFINE('_CHRTROTAXISLABEL','Ruotare etichette asse X (90°)');
+DEFINE('_CHRTROTAXISLABEL','Ruotare etichette asse X (90Â°)');
 DEFINE('_CHRTSHOWX','Mostra griglia asse X');
 DEFINE('_CHRTDISPLABELX','Mostra etichetta asse X ogni');
 DEFINE('_CHRTDATAPOINTS','punti dati');
@@ -551,17 +551,17 @@ DEFINE('_QCERRDATETIME','Una data/ora di');
 DEFINE('_QCERRPAYLOAD','Un valore payload di');
 DEFINE('_QCERRIP','Un indirizzo IP di');
 DEFINE('_QCERRIPTYPE','Un indirizzo IP del tipo');
-DEFINE('_QCERRSPECFIELD',' è stato inserito per il campo protocollo, ma il campo stesso non è stato specificato.');
-DEFINE('_QCERRSPECVALUE','è stato indicato come criterio, ma non è stato valorizzato.');
-DEFINE('_QCERRBOOLEAN','Necessari operatori logici in caso di immissione di più protocolli (AND, OR).');
-DEFINE('_QCERRDATEVALUE','è stato selezionato indicando che deve rispettare criteri data/ora non specificati.');
+DEFINE('_QCERRSPECFIELD',' Ã¨ stato inserito per il campo protocollo, ma il campo stesso non Ã¨ stato specificato.');
+DEFINE('_QCERRSPECVALUE','Ã¨ stato indicato come criterio, ma non Ã¨ stato valorizzato.');
+DEFINE('_QCERRBOOLEAN','Necessari operatori logici in caso di immissione di piÃ¹ protocolli (AND, OR).');
+DEFINE('_QCERRDATEVALUE','Ã¨ stato selezionato indicando che deve rispettare criteri data/ora non specificati.');
 DEFINE('_QCERRINVHOUR','(Ora non valida) Nessun criterio dati specificato valido per l\'ora indicata.');
-DEFINE('_QCERRDATECRIT','è stato selezionato indicando che deve rispettare criteri data/ora non specificati.');
-DEFINE('_QCERROPERSELECT','è stato immesso senza indicare operatori.');
-DEFINE('_QCERRDATEBOOL','Necessari operatori logici in caso di immissione di più criteri data/ora (AND, OR).');
-DEFINE('_QCERRPAYCRITOPER','è stato inserito per un campo criteri payload, ma non è stato specificato un operatore logico.');
-DEFINE('_QCERRPAYCRITVALUE','è stato selezionato indicando che il payload deve essere un criterio, ma non è stato specificato alcun valore da verificare.');
-DEFINE('_QCERRPAYBOOL','Inseriti più criteri payload senza un operatore booleano separatore.');
+DEFINE('_QCERRDATECRIT','Ã¨ stato selezionato indicando che deve rispettare criteri data/ora non specificati.');
+DEFINE('_QCERROPERSELECT','Ã¨ stato immesso senza indicare operatori.');
+DEFINE('_QCERRDATEBOOL','Necessari operatori logici in caso di immissione di piÃ¹ criteri data/ora (AND, OR).');
+DEFINE('_QCERRPAYCRITOPER','Ã¨ stato inserito per un campo criteri payload, ma non Ã¨ stato specificato un operatore logico.');
+DEFINE('_QCERRPAYCRITVALUE','Ã¨ stato selezionato indicando che il payload deve essere un criterio, ma non Ã¨ stato specificato alcun valore da verificare.');
+DEFINE('_QCERRPAYBOOL','Inseriti piÃ¹ criteri payload senza un operatore booleano separatore.');
 DEFINE('_QCMETACRIT','Criteri Meta');
 DEFINE('_QCIPCRIT','Criteri IP');
 DEFINE('_QCPAYCRIT','Criteri Payload');
@@ -570,9 +570,9 @@ DEFINE('_QCUDPCRIT','Criteri UDP');
 DEFINE('_QCICMPCRIT','Criteri ICMP');
 DEFINE('_QCLAYER4CRIT','Layer 4 Criteria'); //NEW
 DEFINE('_QCERRINVIPCRIT','Criterio IP Non Valido');
-DEFINE('_QCERRCRITADDRESSTYPE','è stato inserito come valore del criterio, ma il tipo di indirizzo (es. sorgente, destinazione) non è stato specificato.');
-DEFINE('_QCERRCRITIPADDRESSNONE','indicando che un indirizzo IP sia un criterio, ma non è stato specificato alcun indirizzo da verificare.');
-DEFINE('_QCERRCRITIPADDRESSNONE1','è stato selzionato (al #');
+DEFINE('_QCERRCRITADDRESSTYPE','Ã¨ stato inserito come valore del criterio, ma il tipo di indirizzo (es. sorgente, destinazione) non Ã¨ stato specificato.');
+DEFINE('_QCERRCRITIPADDRESSNONE','indicando che un indirizzo IP sia un criterio, ma non Ã¨ stato specificato alcun indirizzo da verificare.');
+DEFINE('_QCERRCRITIPADDRESSNONE1','Ã¨ stato selzionato (al #');
 DEFINE('_QCERRCRITIPIPBOOL','Inseriti criteri IP multipli senza operatore booleano separatore (es. AND, OR)');
 
 //base_qry_form.php
@@ -659,7 +659,7 @@ DEFINE('SPSENSORLIST','Lista Sensori');
 DEFINE('_BSTTITLE','Orario Profilo di Avvertimenti');
 DEFINE('_BSTTIMECRIT','Criteri Tempo');
 DEFINE('_BSTERRPROFILECRIT','<FONT><B>Nessun criterio di profilo specificato!</B>  Cliccare su "ora", "giorno", o "mese" per scegliere come raggruppare le statistiche.</FONT>');
-DEFINE('_BSTERRTIMETYPE','<FONT><B>il tipo di parametro che verrà passato non è specificato!</B>  Scegliere "il" per specificare una singola data, o "tra" per un intervallo.</FONT>');
+DEFINE('_BSTERRTIMETYPE','<FONT><B>il tipo di parametro che verrÃ  passato non Ã¨ specificato!</B>  Scegliere "il" per specificare una singola data, o "tra" per un intervallo.</FONT>');
 DEFINE('_BSTERRNOYEAR','<FONT><B>Nessun parametro anno specificato!</B></FONT>');
 DEFINE('_BSTERRNOMONTH','<FONT><B>Nessun parametro mese specificato!</B></FONT>');
 DEFINE('_BSTERRNODAY','<FONT><B>Nessun parametro giorno specificato!</B></FONT>');
@@ -680,7 +680,7 @@ DEFINE('_SUADSTADD','Indir.&nbsp;Dest.');
 
 //base_user.php
 DEFINE('_BASEUSERTITLE','Preferenze Utente BASE');
-DEFINE('_BASEUSERERRPWD','La password non può essere vuota o le due password non combaciano!');
+DEFINE('_BASEUSERERRPWD','La password non puÃ² essere vuota o le due password non combaciano!');
 DEFINE('_BASEUSEROLDPWD','Vecchia Password:');
 DEFINE('_BASEUSERNEWPWD','Nuova Password:');
 DEFINE('_BASEUSERNEWPWDAGAIN','Ripeti Nuova Password:');

@@ -1,25 +1,25 @@
 <?PHP
 /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-**
-** (see the file 'base_main.php' for license details)
-**
-** Project Lead: Kevin Johnson <kjohnson@secureideas.net>
-**                Sean Muller <samwise_diver@users.sourceforge.net>
-** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Purpose: Capabilities registry to identify what functionality is available
-**          on the currently running PHP install. This will allow us to vary
-**          functionality on the fly. 
-********************************************************************************
-** Authors:
-********************************************************************************
-** Chris Shepherd <chsh@cogeco.ca>
-**
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (see the file 'base_main.php' for license details)
+ **
+ ** Project Lead: Kevin Johnson <kjohnson@secureideas.net>
+ **                Sean Muller <samwise_diver@users.sourceforge.net>
+ ** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Purpose: Capabilities registry to identify what functionality is available
+ **          on the currently running PHP install. This will allow us to vary
+ **          functionality on the fly.
+ ********************************************************************************
+ ** Authors:
+ ********************************************************************************
+ ** Chris Shepherd <chsh@cogeco.ca>
+ **
+ ********************************************************************************
+ */
 
 // Definitions for capabilities -- Add here as needed.
 define(CAPA_MAIL, 1);
@@ -36,17 +36,17 @@ class CapaRegistry
   // Constructor
   function CapaRegistry ()
   {
-    /* Automatically detect capabilities. Future development 
+    /* Automatically detect capabilities. Future development
      * should be appended here.
      */
-    
+
     // Mail
     if (function_exists('mail'))
     {
       $this->CAPAREG[CAPA_MAIL] = true;
     } else {
       $this->CAPAREG[CAPA_MAIL] = false;
-    }      
+    }
 
     // PEAR::MAIL
     @include "Mail.php";
@@ -76,11 +76,11 @@ class CapaRegistry
     }
 
     // Add checks here as needed.
-    
+
   }
 
   // Capability checking function. Pass it the definitions used above.
-  function hasCapa($capability) 
+  function hasCapa($capability)
   {
     if (array_key_exists($capability, $this->CAPAREG))
     {

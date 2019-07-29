@@ -33,7 +33,7 @@ div.errorMsg {
 }
 
 P,B,A,BODY,FORM,TD,INPUT,SELECT,OPTION,TR,OL,UL,MENU,BLOCKQUOTE,FONT,DIV,H4,H5,H6
-    {
+{
     FONT-FAMILY: arial, helvetica, sans-serif;
     font-size: 10pt;
 }
@@ -79,7 +79,7 @@ A.menuitem {
 }
 
 table {
-    
+
 }
 
 table.summarygraph {
@@ -278,7 +278,7 @@ div.code {
 
 .main_quick_surf {
     font-family: arial, helvetica; #
-    color: #F0F8FF;
+color: #F0F8FF;
     color: C0C0C0;
     background-color: #000000;
     font-size: 26pt;
@@ -287,7 +287,7 @@ div.code {
 
 .main_quick_surf_2 {
     font-family: arial, helvetica; #
-    color: #F0F8FF;
+color: #F0F8FF;
     color: C0C0C0;
     background-color: #000000;
     font-size: 26pt;

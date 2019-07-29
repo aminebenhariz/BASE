@@ -1,28 +1,28 @@
 <?php
 /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-**
-** (see the file 'base_main.php' for license details)
-**
-** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
-**                Sean Muller <samwise_diver@users.sourceforge.net>
-** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Purpose: English language file
-**      To translate into another language, copy this file and
-**          translate each variable into your chosen language.
-**          Leave any variable not translated so that the system will have
-**          something to display.
-********************************************************************************
-** Authors:
-********************************************************************************
-** Kevin Johnson <kjohnson@secureideas.net>
-** Joel Esler <joelesler@users.sourceforge.net>
-** Polish translation: Michal Fraszek <mike111@o2.pl>
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (see the file 'base_main.php' for license details)
+ **
+ ** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
+ **                Sean Muller <samwise_diver@users.sourceforge.net>
+ ** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Purpose: English language file
+ **      To translate into another language, copy this file and
+ **          translate each variable into your chosen language.
+ **          Leave any variable not translated so that the system will have
+ **          something to display.
+ ********************************************************************************
+ ** Authors:
+ ********************************************************************************
+ ** Kevin Johnson <kjohnson@secureideas.net>
+ ** Joel Esler <joelesler@users.sourceforge.net>
+ ** Polish translation: Michal Fraszek <mike111@o2.pl>
+ ********************************************************************************
+ */
 
 //locale
 DEFINE('_LOCALESTR1', 'eng_ENG.ISO8859-1'); //NEW
@@ -124,8 +124,8 @@ DEFINE('_LASTTCP','Ostatnie Alarmy TCP'); //NEW
 DEFINE('_LASTUDP','Ostatnie Alarmy UDP'); //NEW
 DEFINE('_LASTICMP','Ostatnie Alarmy ICMP'); //NEW
 DEFINE('_QUERYDB','Query DB'); //NEW
-DEFINE('_QUERYDBP','Query+DB'); //NEW - Equals to _QUERYDB where spaces are '+'s. 
-                                //Should be something like: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
+DEFINE('_QUERYDBP','Query+DB'); //NEW - Equals to _QUERYDB where spaces are '+'s.
+//Should be something like: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
 DEFINE('_SELECTED','Zaznaczone'); //NEW
 DEFINE('_ALLONSCREEN','Wszystkie na Ekranie'); //NEW
 DEFINE('_ENTIREQUERY','Cale Zapytanie'); //NEW

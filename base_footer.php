@@ -1,21 +1,21 @@
 <?php /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-**
-** (see the file 'base_main.php' for license details)
-**
-** Project Lead: Kevin Johnson <kjohnson@secureideas.net>
-** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Purpose: Footer for each page
-********************************************************************************
-** Authors:
-********************************************************************************
-** Kevin Johnson <kjohnson@secureideas.net
-**
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (see the file 'base_main.php' for license details)
+ **
+ ** Project Lead: Kevin Johnson <kjohnson@secureideas.net>
+ ** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Purpose: Footer for each page
+ ********************************************************************************
+ ** Authors:
+ ********************************************************************************
+ ** Kevin Johnson <kjohnson@secureideas.net
+ **
+ ********************************************************************************
+ */
 
 if (!isset($noDisplayMenu))
 {
@@ -30,13 +30,13 @@ if (!isset($noDisplayMenu))
         echo("<a class='menuitem' href='". $BASE_urlpath ."/base_user.php'>". _USERPREF ."</a>&nbsp;&nbsp;|&nbsp;&nbsp;");
         echo("<a class='menuitem' href='". $BASE_urlpath ."/base_logout.php'>". _LOGOUT ."</a>&nbsp;&nbsp;|&nbsp;&nbsp;");
     }
-    
+
     echo "<a class='menuitem' href='". $BASE_urlpath ."/admin/index.php'>". _ADMIN ."</a>
             </td>
         </tr>
     </table>
     </div>";
-}      
+}
 ?>
 
 

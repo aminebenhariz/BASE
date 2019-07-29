@@ -1,26 +1,26 @@
 <?php
 /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-**
-** (see the file 'base_main.php' for license details)
-**
-** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
-**                Sean Muller <samwise_diver@users.sourceforge.net>
-** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Purpose: Norwegian language file
-**
-** Estimated completion status: 60% 
-**
-********************************************************************************
-** Authors: Ole-Martin Bækkeli  (olebakk@pdapath.com)
-********************************************************************************
-** Kevin Johnson <kjohnson@secureideas.net
-** Joel Esler <joelesler@users.sourceforge.net>
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (see the file 'base_main.php' for license details)
+ **
+ ** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
+ **                Sean Muller <samwise_diver@users.sourceforge.net>
+ ** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Purpose: Norwegian language file
+ **
+ ** Estimated completion status: 60%
+ **
+ ********************************************************************************
+ ** Authors: Ole-Martin BÃ¦kkeli  (olebakk@pdapath.com)
+ ********************************************************************************
+ ** Kevin Johnson <kjohnson@secureideas.net
+ ** Joel Esler <joelesler@users.sourceforge.net>
+ ********************************************************************************
+ */
 
 //locale
 DEFINE('_LOCALESTR1', 'eng_ENG.ISO8859-1'); //NEW
@@ -122,8 +122,8 @@ DEFINE('_LASTTCP','Last TCP Alerts'); //NEW
 DEFINE('_LASTUDP','Last UDP Alerts'); //NEW
 DEFINE('_LASTICMP','Last ICMP Alerts'); //NEW
 DEFINE('_QUERYDB','Query DB'); //NEW
-DEFINE('_QUERYDBP','Query+DB'); //NEW - Equals to _QUERYDB where spaces are '+'s. 
-                                //Should be something like: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
+DEFINE('_QUERYDBP','Query+DB'); //NEW - Equals to _QUERYDB where spaces are '+'s.
+//Should be something like: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
 DEFINE('_SELECTED','Selected'); //NEW
 DEFINE('_ALLONSCREEN','ALL on Screen'); //NEW
 DEFINE('_ENTIREQUERY','Entire Query'); //NEW
@@ -168,7 +168,7 @@ DEFINE('_DISPLAYU','Vis bruker');
 DEFINE('_FOOTER','( by <A class="largemenuitem" href="mailto:base@secureideas.net">Kevin Johnson</A> and the <A class="largemenuitem" href="http://sourceforge.net/project/memberlist.php?group_id=103348">BASE Project Team</A><BR>Built on ACID by Roman Danyliw<BR>');
 
 //index.php --Log in Page
-DEFINE('_LOGINERROR','Enten eksisterer ikke brukeren, ellers så var passordet feil!<br>Vennligst prv igjen');
+DEFINE('_LOGINERROR','Enten eksisterer ikke brukeren, ellers sÃ¥ var passordet feil!<br>Vennligst prv igjen');
 
 // base_main.php
 DEFINE('_MOSTRECENT','Seneste ');
@@ -200,10 +200,10 @@ DEFINE('_NOALERTSDETECT','ingen hendelser detektert');
 
 //base_auth.inc.php
 DEFINE('_ADDEDSF','Vellykket!');
-DEFINE('_NOPWDCHANGE','Greide ikke å bytte passord: ');
+DEFINE('_NOPWDCHANGE','Greide ikke Ã¥ bytte passord: ');
 DEFINE('_NOUSER','Brukeren eksisterer ikke!');
 DEFINE('_OLDPWD','Det gamle passordet er feil!');
-DEFINE('_PWDCANT','Greide ikke å bytte passord: ');
+DEFINE('_PWDCANT','Greide ikke Ã¥ bytte passord: ');
 DEFINE('_PWDDONE','Passordet er endret!');
 DEFINE('_ROLEEXIST','Rollen eksisterer allerede');
 DEFINE('_ROLEIDEXIST','Rolle ID eksisterer allerede');
@@ -304,7 +304,7 @@ DEFINE('_ERRBASEFATAL','BASE FATAL FEIL:');
 
 //base_log_timing.inc.php
 DEFINE('_LOADEDIN','Brukte');
-DEFINE('_SECONDS','sekunder på å laste siden');
+DEFINE('_SECONDS','sekunder pÃ¥ Ã¥ laste siden');
 
 //base_net.inc.php
 DEFINE('_ERRRESOLVEADDRESS','Unable to resolve address');
@@ -397,7 +397,7 @@ DEFINE('_CONFIRMDELETE','Confirm Delete'); //NEW
 DEFINE('_CONFIRMCLEAR','Confirm Clear'); //NEW
 DEFINE('_NOALERTGOUPS','Det finnes ingen hendelsesgrupper');
 DEFINE('_NUMALERTS','Antall hendelser');
-DEFINE('_ACTIONS','Gjøremål');
+DEFINE('_ACTIONS','GjÃ¸remÃ¥l');
 DEFINE('_NOTASSIGN','ikke lagt til enda');
 
 //base_common.php
@@ -441,7 +441,7 @@ DEFINE('_TYPELINE','line'); //NEW
 DEFINE('_TYPEPIE','pie'); //NEW
 DEFINE('_CHARTHOUR','{hora}'); //NEW
 DEFINE('_CHARTDAY','{dia}'); //NEW
-DEFINE('_CHARTMONTH','{mÃªs}'); //NEW
+DEFINE('_CHARTMONTH','{mÃƒÂªs}'); //NEW
 DEFINE('_GRAPHALERTS','Graph Alerts'); //NEW
 DEFINE('_AXISCONTROLS','X / Y AXIS CONTROLS'); //NEW
 
@@ -681,7 +681,7 @@ DEFINE('_SUADSTADD','Dest.&nbsp;Adr.');
 
 //base_user.php
 DEFINE('_BASEUSERTITLE','BASE Brukerpreferanser');
-DEFINE('_BASEUSERERRPWD','Passordet kan ikke være blankt, eller passordene du oppgav var ikke like!');
+DEFINE('_BASEUSERERRPWD','Passordet kan ikke vÃ¦re blankt, eller passordene du oppgav var ikke like!');
 DEFINE('_BASEUSEROLDPWD','Gammelt passord:');
 DEFINE('_BASEUSERNEWPWD','Nytt passord:');
 DEFINE('_BASEUSERNEWPWDAGAIN','Nytt passord igjen:');

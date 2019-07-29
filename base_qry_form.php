@@ -1,46 +1,46 @@
 <?php
 /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-**
-** (see the file 'base_main.php' for license details)
-**
-** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
-** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Purpose: renders the HTML form to gather search criteria
-********************************************************************************
-** Authors:
-********************************************************************************
-** Kevin Johnson <kjohnson@secureideas.net
-**
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (see the file 'base_main.php' for license details)
+ **
+ ** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
+ ** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Purpose: renders the HTML form to gather search criteria
+ ********************************************************************************
+ ** Authors:
+ ********************************************************************************
+ ** Kevin Johnson <kjohnson@secureideas.net
+ **
+ ********************************************************************************
+ */
 
 if ( $submit == "TCP" )        {  $cs->criteria['layer4']->Set("TCP");   }
 if ( $submit == "UDP" )        {  $cs->criteria['layer4']->Set("UDP");   }
 if ( $submit == "ICMP" )       {  $cs->criteria['layer4']->Set("ICMP");  }
 if ( $submit == _NOLAYER4 )    {  $cs->criteria['layer4']->Set("");      }
 
-if ( $submit == _ADDTIME && $cs->criteria['time']->GetFormItemCnt() < $MAX_ROWS)        
-   $cs->criteria['time']->AddFormItem($submit, $cs->criteria['layer4']->Get());
-if ( $submit == _ADDADDRESS && $cs->criteria['ip_addr']->GetFormItemCnt() < $MAX_ROWS)     
-   $cs->criteria['ip_addr']->AddFormItem($submit, $cs->criteria['layer4']->Get());
-if ( $submit == _ADDIPFIELD && $cs->criteria['ip_field']->GetFormItemCnt() < $MAX_ROWS)    
-   $cs->criteria['ip_field']->AddFormItem($submit, $cs->criteria['layer4']->Get());
-if ( $submit == _ADDTCPPORT && $cs->criteria['tcp_port']->GetFormItemCnt() < $MAX_ROWS)    
-   $cs->criteria['tcp_port']->AddFormItem($submit, $cs->criteria['layer4']->Get());
-if ( $submit == _ADDTCPFIELD && $cs->criteria['tcp_field']->GetFormItemCnt() < $MAX_ROWS)   
-   $cs->criteria['tcp_field']->AddFormItem($submit, $cs->criteria['layer4']->Get());
-if ( $submit == _ADDUDPPORT && $cs->criteria['udp_port']->GetFormItemCnt() < $MAX_ROWS)    
-   $cs->criteria['udp_port']->AddFormItem($submit, $cs->criteria['layer4']->Get());
+if ( $submit == _ADDTIME && $cs->criteria['time']->GetFormItemCnt() < $MAX_ROWS)
+    $cs->criteria['time']->AddFormItem($submit, $cs->criteria['layer4']->Get());
+if ( $submit == _ADDADDRESS && $cs->criteria['ip_addr']->GetFormItemCnt() < $MAX_ROWS)
+    $cs->criteria['ip_addr']->AddFormItem($submit, $cs->criteria['layer4']->Get());
+if ( $submit == _ADDIPFIELD && $cs->criteria['ip_field']->GetFormItemCnt() < $MAX_ROWS)
+    $cs->criteria['ip_field']->AddFormItem($submit, $cs->criteria['layer4']->Get());
+if ( $submit == _ADDTCPPORT && $cs->criteria['tcp_port']->GetFormItemCnt() < $MAX_ROWS)
+    $cs->criteria['tcp_port']->AddFormItem($submit, $cs->criteria['layer4']->Get());
+if ( $submit == _ADDTCPFIELD && $cs->criteria['tcp_field']->GetFormItemCnt() < $MAX_ROWS)
+    $cs->criteria['tcp_field']->AddFormItem($submit, $cs->criteria['layer4']->Get());
+if ( $submit == _ADDUDPPORT && $cs->criteria['udp_port']->GetFormItemCnt() < $MAX_ROWS)
+    $cs->criteria['udp_port']->AddFormItem($submit, $cs->criteria['layer4']->Get());
 if ( $submit == _ADDUDPFIELD && $cs->criteria['udp_field']->GetFormItemCnt() < $MAX_ROWS)
-   $cs->criteria['udp_field']->AddFormItem($submit, $cs->criteria['layer4']->Get());
+    $cs->criteria['udp_field']->AddFormItem($submit, $cs->criteria['layer4']->Get());
 if ( $submit == _ADDICMPFIELD && $cs->criteria['icmp_field']->GetFormItemCnt() < $MAX_ROWS)
-   $cs->criteria['icmp_field']->AddFormItem($submit, $cs->criteria['layer4']->Get());
+    $cs->criteria['icmp_field']->AddFormItem($submit, $cs->criteria['layer4']->Get());
 if ( $submit == _ADDPAYLOAD && $cs->criteria['data']->GetFormItemCnt() < $MAX_ROWS)
-   $cs->criteria['data']->AddFormItem($submit, $cs->criteria['layer4']->Get());
+    $cs->criteria['data']->AddFormItem($submit, $cs->criteria['layer4']->Get());
 
 echo '
 
@@ -55,38 +55,38 @@ echo '
   <TR>
       <TD COLSPAN=2>
            <B>'._SENSOR.': </B>';
-     $cs->criteria['sensor']->PrintForm();
+$cs->criteria['sensor']->PrintForm();
 
-     echo '<B>'._ALERTGROUP.': </B>';
-     $cs->criteria['ag']->PrintForm();
-     echo '</TD>';
+echo '<B>'._ALERTGROUP.': </B>';
+$cs->criteria['ag']->PrintForm();
+echo '</TD>';
 
-     echo '<TR>
+echo '<TR>
             <TD><B>'._SIGNATURE.': </B></TD>
-           <TD>';  
+           <TD>';
 
-     $cs->criteria['sig']->PrintForm();
+$cs->criteria['sig']->PrintForm();
 
-     if ( $db->baseGetDBversion() >= 103 )
-     {
-        echo '<B>'._CHRTCLASS.': </B>';
-        $cs->criteria['sig_class']->PrintForm();
-        echo '<B>'._PRIORITY.': </B>';
-        $cs->criteria['sig_priority']->PrintForm();
-     }     
+if ( $db->baseGetDBversion() >= 103 )
+{
+    echo '<B>'._CHRTCLASS.': </B>';
+    $cs->criteria['sig_class']->PrintForm();
+    echo '<B>'._PRIORITY.': </B>';
+    $cs->criteria['sig_priority']->PrintForm();
+}
 
-     echo '</TD></TR>';    
+echo '</TD></TR>';
 
 echo '<TR>
       <TD><B>'._ALERTTIME.':</B></TD>
       <TD>';
-      $cs->criteria['time']->PrintForm();    
-      
-        echo '
+$cs->criteria['time']->PrintForm();
+
+echo '
 </TABLE>
 <ul id="zMenu">';
 
-  echo '
+echo '
 <p>    </p>
 <li> <a href="#">'._QCIPCRIT.'</a>
 <ul>      
@@ -99,22 +99,22 @@ echo '<TR>
 </TABLE>
 
 <TABLE WIDTH="90%" BORDER=2 class="query">';
-      echo '<TR><TD VALIGN=TOP><B>'._ADDRESS.':</B>';  
-      echo '    <TD>';
+echo '<TR><TD VALIGN=TOP><B>'._ADDRESS.':</B>';
+echo '    <TD>';
 
-      $cs->criteria['ip_addr']->PrintForm();
+$cs->criteria['ip_addr']->PrintForm();
 
-      echo '<TR><TD><B>'._MISC.':</B>';
-      echo '    <TD>';
+echo '<TR><TD><B>'._MISC.':</B>';
+echo '    <TD>';
 
-      $cs->criteria['ip_field']->PrintForm();
+$cs->criteria['ip_field']->PrintForm();
 
-   echo '
+echo '
    <TR><TD><B>Layer-4:</B>
        <TD>';
 
-   $cs->criteria['layer4']->PrintForm();
-   
+$cs->criteria['layer4']->PrintForm();
+
 echo '
    </TABLE>
       </ul>
@@ -123,7 +123,7 @@ echo '
 
 if ( $cs->criteria['layer4']->Get() == "TCP" )
 {
-  echo '
+    echo '
     <p></p>
 <li> <a href="#">'._QCTCPCRIT.'</a>
       <ul>
@@ -137,20 +137,20 @@ if ( $cs->criteria['layer4']->Get() == "TCP" )
 
 <TABLE WIDTH="90%" BORDER=2 class="query">';
 
-      echo '<TR><TD><B>'._PORT.':</B>';
-      echo '    <TD>';
-      $cs->criteria['tcp_port']->PrintForm();
+    echo '<TR><TD><B>'._PORT.':</B>';
+    echo '    <TD>';
+    $cs->criteria['tcp_port']->PrintForm();
 
-  echo '
+    echo '
   <TR>
       <TD VALIGN=TOP><B>'._FLAGS.':</B>';
-      $cs->criteria['tcp_flags']->PrintForm();
+    $cs->criteria['tcp_flags']->PrintForm();
 
-      echo '<TR><TD><B>'._MISC.':</B>';
-      echo '    <TD>';
-      $cs->criteria['tcp_field']->PrintForm();
+    echo '<TR><TD><B>'._MISC.':</B>';
+    echo '    <TD>';
+    $cs->criteria['tcp_field']->PrintForm();
 
-  echo'
+    echo'
 </TABLE>         
 </ul>
 <p>  </p>
@@ -159,7 +159,7 @@ if ( $cs->criteria['layer4']->Get() == "TCP" )
 
 if ( $cs->criteria['layer4']->Get() == "UDP" )
 {
-  echo '
+    echo '
       <p></p>
 <li> <a href="#">'._QCUDPCRIT.'</a>
       <ul>
@@ -173,14 +173,14 @@ if ( $cs->criteria['layer4']->Get() == "UDP" )
 
 <TABLE WIDTH="100%" BORDER=2 class="query">';
 
-      echo '<TR><TD><B>'._PORT.':</B>';
-      echo '    <TD>';
-      $cs->criteria['udp_port']->PrintForm();
+    echo '<TR><TD><B>'._PORT.':</B>';
+    echo '    <TD>';
+    $cs->criteria['udp_port']->PrintForm();
 
-      echo '<TR><TD><B>'._MISC.':</B>';
-      echo '    <TD>';
-      $cs->criteria['udp_field']->PrintForm();
-  echo'
+    echo '<TR><TD><B>'._MISC.':</B>';
+    echo '    <TD>';
+    $cs->criteria['udp_field']->PrintForm();
+    echo'
 </TABLE>
 </ul>
 <p>
@@ -191,7 +191,7 @@ if ( $cs->criteria['layer4']->Get() == "UDP" )
 
 if ( $cs->criteria['layer4']->Get() == "ICMP" )
 {
-  echo  '
+    echo  '
         <p></p>
 <li> <a href="#">'._QCICMPCRIT.'</a>
       <ul>
@@ -206,14 +206,14 @@ if ( $cs->criteria['layer4']->Get() == "ICMP" )
 
 <TABLE WIDTH="100%" BORDER=2 class="query">';
 
-      echo '<TR><TD><B>'._MISC.':</B>';
-      echo '    <TD>';
-      $cs->criteria['icmp_field']->PrintForm();
-   echo '
+    echo '<TR><TD><B>'._MISC.':</B>';
+    echo '    <TD>';
+    $cs->criteria['icmp_field']->PrintForm();
+    echo '
 </TABLE>
 </ul>
 <p>  </p>
-</li>'; 
+</li>';
 }
 
 echo '
@@ -231,16 +231,16 @@ echo '
 <TABLE WIDTH="90%" BORDER=2 class="query">
   <TR>
       <TD>';
-      $cs->criteria['data']->PrintForm();
+$cs->criteria['data']->PrintForm();
 
-        echo '
+echo '
 </TABLE>
 </ul>
 <p>  </p>
 </li></ul>';
 
-  echo '<ul><INPUT TYPE="hidden" NAME="new" VALUE="1">';
-  echo '<P>
+echo '<ul><INPUT TYPE="hidden" NAME="new" VALUE="1">';
+echo '<P>
         <CENTER>
         <TABLE BORDER=1>
         <TR><TD>
@@ -267,7 +267,7 @@ echo '
 		</CENTER>
 		</ul>
 		<hr>';
- echo '
+echo '
  <!-- ************ JavaScript for Hiding Details ******************** -->
  <script type="text/javascript">
 // <![CDATA[
@@ -291,13 +291,13 @@ function loopElements(el,level){
 						//Hide sublevels
 
 ';
-   if ($show_expanded_query == 1)
- echo ' 
+if ($show_expanded_query == 1)
+    echo ' 
 						temp.style.display = ""  ';
-   else
- echo ' 
+else
+    echo ' 
 						temp.style.display = "none"  ';
- echo '
+echo '
 						//Set class
 						temp.className= "zMenu"+level
 						//Recursive - calling self with new found element - go all the way through 

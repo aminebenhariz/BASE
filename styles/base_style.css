@@ -33,7 +33,7 @@ div.errorMsg {
 }
 
 P,B,A,BODY,FORM,TD,INPUT,SELECT,OPTION,TR,OL,UL,MENU,BLOCKQUOTE,FONT,DIV,H4,H5,H6
-    {
+{
     FONT-FAMILY: arial, helvetica, sans-serif;
     font-size: 10pt;
 }
@@ -79,7 +79,7 @@ A.menuitem {
 }
 
 table {
-    
+
 }
 
 table.summarygraph {

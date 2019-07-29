@@ -1,27 +1,27 @@
 <?php
 /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-**
-** (see the file 'base_main.php' for license details)
-**
-** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
-**                Sean Muller <samwise_diver@users.sourceforge.net>
-** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Purpose: English language file
-**      To translate into another language, copy this file and
-**          translate each variable into your chosen language.
-**          Leave any variable not translated so that the system will have
-**          something to display.
-********************************************************************************
-** Authors:
-********************************************************************************
-** Kevin Johnson <kjohnson@secureideas.net>
-** Joel Esler <joelesler@users.sourceforge.net>
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (see the file 'base_main.php' for license details)
+ **
+ ** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
+ **                Sean Muller <samwise_diver@users.sourceforge.net>
+ ** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Purpose: English language file
+ **      To translate into another language, copy this file and
+ **          translate each variable into your chosen language.
+ **          Leave any variable not translated so that the system will have
+ **          something to display.
+ ********************************************************************************
+ ** Authors:
+ ********************************************************************************
+ ** Kevin Johnson <kjohnson@secureideas.net>
+ ** Joel Esler <joelesler@users.sourceforge.net>
+ ********************************************************************************
+ */
 
 //locale
 DEFINE('_LOCALESTR1', 'eng_ENG.ISO8859-1'); //NEW
@@ -53,12 +53,12 @@ DEFINE('_SUCCESS','Successful');
 DEFINE('_SENSOR','Sensor');
 DEFINE('_SENSORS','Sensors'); //NEW
 DEFINE('_SIGNATURE','Signature');
-DEFINE('_TIMESTAMP','Tidsmærke');
+DEFINE('_TIMESTAMP','TidsmÃ¦rke');
 DEFINE('_NBSOURCEADDR','Kilde&nbsp;Adresse');
 DEFINE('_NBDESTADDR','Dest.&nbsp;Adresse');
 DEFINE('_NBLAYER4','Lag&nbsp;4&nbsp;Proto');
 DEFINE('_PRIORITY','Prioritet');
-DEFINE('_EVENTTYPE','hændelses type');
+DEFINE('_EVENTTYPE','hÃ¦ndelses type');
 DEFINE('_JANUARY','Januar');
 DEFINE('_FEBRUARY','Februar');
 DEFINE('_MARCH','Marts');
@@ -123,8 +123,8 @@ DEFINE('_LASTTCP','Last TCP Alerts'); //NEW
 DEFINE('_LASTUDP','Last UDP Alerts'); //NEW
 DEFINE('_LASTICMP','Last ICMP Alerts'); //NEW
 DEFINE('_QUERYDB','Query DB'); //NEW
-DEFINE('_QUERYDBP','Query+DB'); //NEW - Equals to _QUERYDB where spaces are '+'s. 
-                                //Should be something like: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
+DEFINE('_QUERYDBP','Query+DB'); //NEW - Equals to _QUERYDB where spaces are '+'s.
+//Should be something like: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
 DEFINE('_SELECTED','Selected'); //NEW
 DEFINE('_ALLONSCREEN','ALL on Screen'); //NEW
 DEFINE('_ENTIREQUERY','Entire Query'); //NEW
@@ -138,7 +138,7 @@ DEFINE('_PREVIOUS','Previous'); //NEW
 
 //Menu items
 DEFINE('_HOME','Hjem');
-DEFINE('_SEARCH','Søg');
+DEFINE('_SEARCH','SÃ¸g');
 DEFINE('_AGMAINT','Alarm Gruppe Vedligholdelse');
 DEFINE('_USERPREF','Bruger Indstillinger');
 DEFINE('_CACHE','Cache & Status');
@@ -162,14 +162,14 @@ DEFINE('_VIEWGROUPS','Vis Gruppe');
 DEFINE('_EDITGROUPS','Rediger Gruppe');
 DEFINE('_DELETEGROUPS','Slet Gruppe');
 DEFINE('_CLEARGROUPS','Ryd Gruppe');
-DEFINE('_CHNGPWD','Ændre password');
+DEFINE('_CHNGPWD','Ã†ndre password');
 DEFINE('_DISPLAYU','Vis bruger');
 
 //base_footer.php
 DEFINE('_FOOTER','( by <A class="largemenuitem" href="mailto:base@secureideas.net">Kevin Johnson</A> and the <A class="largemenuitem" href="http://sourceforge.net/project/memberlist.php?group_id=103348">BASE Project Team</A><BR>Built on ACID by Roman Danyliw )');
 
 //index.php --Log in Page
-DEFINE('_LOGINERROR','Bruger eksistere ikke eller dit password var forkert!<br>Prøv venligst igen');
+DEFINE('_LOGINERROR','Bruger eksistere ikke eller dit password var forkert!<br>PrÃ¸v venligst igen');
 
 // base_main.php
 DEFINE('_MOSTRECENT','Seneste ');
@@ -189,7 +189,7 @@ DEFINE('_LSOURCEPORTS','Sidste Kilde Porte: ');
 DEFINE('_LDESTPORTS','Sidste Destination Porte: ');
 DEFINE('_FREGSOURCEP','De Meste Brugte Kilde Porte: ');
 DEFINE('_FREGDESTP','De Meste Brugte Destination Porte: ');
-DEFINE('_QUERIED','Sat I Kø Den');
+DEFINE('_QUERIED','Sat I KÃ¸ Den');
 DEFINE('_DATABASE','Database:');
 DEFINE('_SCHEMAV','Schema Version:');
 DEFINE('_TIMEWIN','Tids Vindue:');
@@ -200,11 +200,11 @@ DEFINE('_TRAFFICPROBPRO','Traffic Profile by Protocol'); //NEW
 
 //base_auth.inc.php
 DEFINE('_ADDEDSF','Lagt Til Vellykket');
-DEFINE('_NOPWDCHANGE','Kan ikke ændre dit password: ');
+DEFINE('_NOPWDCHANGE','Kan ikke Ã¦ndre dit password: ');
 DEFINE('_NOUSER','Bruger eksistere ikke!');
 DEFINE('_OLDPWD','Det gamle password tastet ind matcher ikke vores registreringer!');
-DEFINE('_PWDCANT','Kan ikke ændre dit password: ');
-DEFINE('_PWDDONE','Dit password er blevet ændret!');
+DEFINE('_PWDCANT','Kan ikke Ã¦ndre dit password: ');
+DEFINE('_PWDDONE','Dit password er blevet Ã¦ndret!');
 DEFINE('_ROLEEXIST','Rolle Eksistere Allerede');
 DEFINE('_ROLEIDEXIST','Rolle ID Eksistere Allerede');
 DEFINE('_ROLEADDED','Rolle Lagt Til Vellykket');
@@ -226,18 +226,18 @@ DEFINE('_UPDATEUSER','Update User'); //NEW
 
 //admin/index.php
 DEFINE('_BASEADMIN','BASE Administration');
-DEFINE('_BASEADMINTEXT','Vælg venligst en valgmulighed til venstre');
+DEFINE('_BASEADMINTEXT','VÃ¦lg venligst en valgmulighed til venstre');
 
 //base_action.inc.php
 DEFINE('_NOACTION','Ingen handling var specificeret til alarmerne');
 DEFINE('_INVALIDACT',' er en ugyldig handling');
-DEFINE('_ERRNOAG','Kunne ikke lægge nogen alarmer til da der ikke var specificeret nogen AG');
+DEFINE('_ERRNOAG','Kunne ikke lÃ¦gge nogen alarmer til da der ikke var specificeret nogen AG');
 DEFINE('_ERRNOEMAIL','Kunne ikke emaile nogen alarmer da der ikke er nogen email adresse specificeret');
 DEFINE('_ACTION','HANDLING');
 DEFINE('_CONTEXT','indhold');
-DEFINE('_ADDAGID','LÆG til AG (mth ID)');
-DEFINE('_ADDAG','LÆG-Ny-AG');
-DEFINE('_ADDAGNAME','LÆG til AG (mth Navn)');
+DEFINE('_ADDAGID','LÃ†G til AG (mth ID)');
+DEFINE('_ADDAG','LÃ†G-Ny-AG');
+DEFINE('_ADDAGNAME','LÃ†G til AG (mth Navn)');
 DEFINE('_CREATEAG','Lav AG (mht Navn)');
 DEFINE('_CLEARAG','Ryd AG');
 DEFINE('_DELETEALERT','Slet alarm(er)');
@@ -270,7 +270,7 @@ DEFINE('_ERRCACHEUPDATE','Kunne ikke opdatere handlings cachen');
 DEFINE('_ALERTSCACHE',' alarm(er) til Alarm cachen');
 
 //base_db.inc.php
-DEFINE('_ERRSQLTRACE','Kunne ikke åbne SQL trace fil');
+DEFINE('_ERRSQLTRACE','Kunne ikke Ã¥bne SQL trace fil');
 DEFINE('_ERRSQLCONNECT','Fejl ved forbindelse til DB :');
 DEFINE('_ERRSQLCONNECTINFO','<P>Check DB forbindelses variablerne i <I>base_conf.php</I> 
               <PRE>
@@ -288,10 +288,10 @@ DEFINE('_ERRSQLDBALLOAD1','<P><B>Fejl ved loading af DB Abstraction biblioteket:
 DEFINE('_ERRSQLDBALLOAD2','<P>Check DB abstraction bibliotekets variable <CODE>$DBlib_path</CODE> i <CODE>base_conf.php</CODE>
             <P>
             Det underliggende database bibliotek brugt er ADODB, som kan downloades
-            på <A HREF="http://adodb.sourceforge.net/">http://adodb.sourceforge.net/</A>');
+            pÃ¥ <A HREF="http://adodb.sourceforge.net/">http://adodb.sourceforge.net/</A>');
 DEFINE('_ERRSQLDBTYPE','Invalid Database Type Specificeret');
 DEFINE('_ERRSQLDBTYPEINFO1','Variablen <CODE>\$DBtype</CODE> i <CODE>base_conf.php</CODE> var sat til den ukendte database type af ');
-DEFINE('_ERRSQLDBTYPEINFO2','Kun de følgende databaser kan bruges: <PRE>
+DEFINE('_ERRSQLDBTYPEINFO2','Kun de fÃ¸lgende databaser kan bruges: <PRE>
                 MySQL         : \'mysql\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
@@ -309,7 +309,7 @@ DEFINE('_SECONDS','sekunder');
 DEFINE('_ERRRESOLVEADDRESS','Kunne ikke resolve adresse');
 
 //base_output_query.inc.php
-DEFINE('_QUERYRESULTSHEADER','Kø Resultater Uddata Hoved');
+DEFINE('_QUERYRESULTSHEADER','KÃ¸ Resultater Uddata Hoved');
 
 //base_signature.inc.php
 DEFINE('_ERRSIGNAMEUNK','SigNavn ukendt');
@@ -440,7 +440,7 @@ DEFINE('_TYPELINE','line'); //NEW
 DEFINE('_TYPEPIE','pie'); //NEW
 DEFINE('_CHARTHOUR','{hora}'); //NEW
 DEFINE('_CHARTDAY','{dia}'); //NEW
-DEFINE('_CHARTMONTH','{mÃªs}'); //NEW
+DEFINE('_CHARTMONTH','{mÃƒÂªs}'); //NEW
 DEFINE('_GRAPHALERTS','Graph Alerts'); //NEW
 DEFINE('_AXISCONTROLS','X / Y AXIS CONTROLS'); //NEW
 

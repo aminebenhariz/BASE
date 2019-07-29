@@ -1,35 +1,35 @@
 <?php
 /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-**
-** (veja o arquivo 'base_main.php' para detalhes de licença)
-**
-** Lideranças do Projeto: Kevin Johnson <kjohnson@secureideas.net>
-**                Sean Muller <samwise_diver@users.sourceforge.net>
-** Feito a partir do trabalho de Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Propósito: Arquivo da linguagem Português de Portugal  
-**      Para traduzir para outra linguagem, copie este arquivo e
-**          traduza cada variável para a linguagem escolhida.
-**          Deixe qualquer variável não traduzida como está para que o
-**          sistema tenha algo para mostrar.
-********************************************************************************
-** Autores:
-********************************************************************************
-** Kevin Johnson <kjohnson@secureideas.net
-** Joel Esler <joelesler@users.sourceforge.net>
-** Traduzido por: João Ricardo Marques Mota
-**                iceburn_tuga@users.sourceforge.net
-** Baseada na tradução de: Pedro Henrique Nogueira Walter
-**                thehardware@users.sourceforge.net
-** Corrigida e finalizada por: Thiago Martins
-**                tmartins@users.sourceforge.net
-** 31/01/2005 - Correção dos códigos unicode que não estão sendo exibidos corretamente
-** 01/02/2005 - Finalização dos ítens não traduzidos
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (veja o arquivo 'base_main.php' para detalhes de licença)
+ **
+ ** Lideranças do Projeto: Kevin Johnson <kjohnson@secureideas.net>
+ **                Sean Muller <samwise_diver@users.sourceforge.net>
+ ** Feito a partir do trabalho de Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Propósito: Arquivo da linguagem Português de Portugal
+ **      Para traduzir para outra linguagem, copie este arquivo e
+ **          traduza cada variável para a linguagem escolhida.
+ **          Deixe qualquer variável não traduzida como está para que o
+ **          sistema tenha algo para mostrar.
+ ********************************************************************************
+ ** Autores:
+ ********************************************************************************
+ ** Kevin Johnson <kjohnson@secureideas.net
+ ** Joel Esler <joelesler@users.sourceforge.net>
+ ** Traduzido por: João Ricardo Marques Mota
+ **                iceburn_tuga@users.sourceforge.net
+ ** Baseada na tradução de: Pedro Henrique Nogueira Walter
+ **                thehardware@users.sourceforge.net
+ ** Corrigida e finalizada por: Thiago Martins
+ **                tmartins@users.sourceforge.net
+ ** 31/01/2005 - Correção dos códigos unicode que não estão sendo exibidos corretamente
+ ** 01/02/2005 - Finalização dos ítens não traduzidos
+ ********************************************************************************
+ */
 //locale
 DEFINE('_LOCALESTR1', 'pt_PT.ISO8859-1');
 DEFINE('_LOCALESTR2', 'pt_PT.utf-8');
@@ -130,8 +130,8 @@ DEFINE('_LASTTCP','alertas TCP mais recentes');
 DEFINE('_LASTUDP','alertas UDP mais recentes');
 DEFINE('_LASTICMP','alertas ICMP mais recentes');
 DEFINE('_QUERYDB','Pesquisar na BD');
-DEFINE('_QUERYDBP','Pesquisar+na+BD'); //Igual a _QUERYDB onde os espaços são '+'s. 
-                                       //Deveria ser algo como: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
+DEFINE('_QUERYDBP','Pesquisar+na+BD'); //Igual a _QUERYDB onde os espaços são '+'s.
+//Deveria ser algo como: DEFINE('_QUERYDBP',str_replace(" ", "+", _QUERYDB));
 DEFINE('_SELECTED','Seleccionado(s)');
 DEFINE('_ALLONSCREEN','Todos no ecrã');
 DEFINE('_ENTIREQUERY','Toda a pesquisa');

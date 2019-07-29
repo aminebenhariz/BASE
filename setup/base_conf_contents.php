@@ -1,29 +1,29 @@
 <?php
 /*******************************************************************************
-** Basic Analysis and Security Engine (BASE)
-** Copyright (C) 2004 BASE Project Team
-** Copyright (C) 2000 Carnegie Mellon University
-** 
-** (see the file 'base_main.php' for license details)
-**
-** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
-** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
-**
-** Purpose: Vanilla Config file used for the setup program
-********************************************************************************
-** Authors:
-********************************************************************************
-** Kevin Johnson <kjohnson@secureideas.net
-**
-********************************************************************************
-*/
+ ** Basic Analysis and Security Engine (BASE)
+ ** Copyright (C) 2004 BASE Project Team
+ ** Copyright (C) 2000 Carnegie Mellon University
+ **
+ ** (see the file 'base_main.php' for license details)
+ **
+ ** Project Leads: Kevin Johnson <kjohnson@secureideas.net>
+ ** Built upon work by Roman Danyliw <rdd@cert.org>, <roman@danyliw.com>
+ **
+ ** Purpose: Vanilla Config file used for the setup program
+ ********************************************************************************
+ ** Authors:
+ ********************************************************************************
+ ** Kevin Johnson <kjohnson@secureideas.net
+ **
+ ********************************************************************************
+ */
 
 function returnContents()
 {
     GLOBAL $language, $useauth, $adodb, $chartlib, $uri, $dbtype, $dbhost,
-        $dbport, $dbname, $dbusername, $dbpasswd, $arcdbexists, $arcdbhost,
-        $arcdbport, $arcdbname, $arcdbusername, $arcdbpasswd;
-        
+           $dbport, $dbname, $dbusername, $dbpasswd, $arcdbexists, $arcdbhost,
+           $arcdbport, $arcdbname, $arcdbusername, $arcdbpasswd;
+
     $contents = '<?php
 /*******************************************************************************
 ** Basic Analysis and Security Engine (BASE)
