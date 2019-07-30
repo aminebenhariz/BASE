@@ -24,7 +24,7 @@ defined( '_BASE_INC' ) or die( 'Accessing this file directly is not allowed.' );
 
 function PrintBASESubHeader($page_title, $page_name, $back_link, $refresh = 0, $page = "")
 {
-    GLOBAL $debug_mode, $BASE_VERSION, $BASE_path, $BASE_urlpath, $html_no_cache,
+    GLOBAL $debug_mode, $BASE_VERSION, $BASE_urlpath, $html_no_cache,
            $max_script_runtime, $Use_Auth_System, $stat_page_refresh_time, $base_style, $refresh_stat_page;
 
     if ( ini_get("safe_mode") != true )
@@ -50,8 +50,8 @@ function PrintBASESubHeader($page_title, $page_name, $back_link, $refresh = 0, $
         </HEAD>
         <BODY>';
 
-    include("$BASE_path/base_hdr1.php");
-    include("$BASE_path/base_hdr2.php");
+    include(__DIR__ . "/../base_hdr1.php");
+    include(__DIR__ . "/../base_hdr2.php");
 
     echo "<TABLE WIDTH=\"100%\"><TR><TD ALIGN=RIGHT>".$back_link."</TD></TR></TABLE><BR>";
 
@@ -60,10 +60,10 @@ function PrintBASESubHeader($page_title, $page_name, $back_link, $refresh = 0, $
 
 function PrintBASESubFooter()
 {
-    GLOBAL $BASE_VERSION, $BASE_path, $BASE_urlpath, $Use_Auth_System;
+    GLOBAL $BASE_VERSION, $BASE_urlpath, $Use_Auth_System;
     echo "\n\n<!-- BASE Footer -->\n".
         "<P>\n";
-    include("$BASE_path/base_footer.php");
+    include(__DIR__ . "/../base_footer.php");
     echo "\n\n";
 }
 

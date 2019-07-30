@@ -23,8 +23,8 @@
  **/
 defined( '_BASE_INC' ) or die( 'Accessing this file directly is not allowed.' );
 
-include_once("$BASE_path/includes/base_state_common.inc.php");
-include_once("$BASE_path/includes/base_state_citems.inc.php");
+include_once(__DIR__ . "/../includes/base_state_common.inc.php");
+include_once(__DIR__ . "/../includes/base_state_citems.inc.php");
 
 class CriteriaState
 {

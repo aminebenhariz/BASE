@@ -19,7 +19,7 @@
  ********************************************************************************
  */
 
-include_once ("$BASE_path/base_graph_common.php");
+include_once (__DIR__ . "/base_graph_common.php");
 
 
 

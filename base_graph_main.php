@@ -22,12 +22,12 @@
  ********************************************************************************
  */
 
-include ("base_conf.php");
-include ("$BASE_path/includes/base_constants.inc.php");
-include ("$BASE_path/includes/base_include.inc.php");
-include_once ("$BASE_path/base_db_common.php");
-include_once ("$BASE_path/base_common.php");
-include_once ("$BASE_path/base_graph_common.php");
+include (__DIR__ . "/base_conf.php");
+include (__DIR__ . "/includes/base_constants.inc.php");
+include (__DIR__ . "/includes/base_include.inc.php");
+include_once (__DIR__ . "/base_db_common.php");
+include_once (__DIR__ . "/base_common.php");
+include_once (__DIR__ . "/base_graph_common.php");
 
 
 
@@ -186,7 +186,7 @@ if ( $event_cache_auto_update == 1 )  UpdateAlertCache($db);
 if ( ini_get("safe_mode") != true )
     set_time_limit($max_script_runtime);
 
-include("$BASE_path/base_graph_form.php");
+include(__DIR__ . "/base_graph_form.php");
 
 $data_pnt_cnt = 0;
 /* Error Conditions */

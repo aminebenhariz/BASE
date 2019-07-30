@@ -23,8 +23,8 @@
  **/
 defined( '_BASE_INC' ) or die( 'Accessing this file directly is not allowed.' );
 
-include_once("$BASE_path/base_stat_common.php");
-include_once("$BASE_path/includes/base_log_error.inc.php");
+include_once(__DIR__ . "/../base_stat_common.php");
+include_once(__DIR__ . "/../includes/base_log_error.inc.php");
 
 function UpdateDNSCache($db)
 {

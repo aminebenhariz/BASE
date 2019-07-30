@@ -23,14 +23,14 @@
  **
  ********************************************************************************
  */
-require("base_conf.php");
-include("$BASE_path/includes/base_constants.inc.php");
-include("$BASE_path/includes/base_include.inc.php");
-include_once("$BASE_path/includes/base_action.inc.php");
-include_once("$BASE_path/base_db_common.php");
-include_once("$BASE_path/base_common.php");
-include_once("$BASE_path/base_qry_common.php");
-include_once("$BASE_path/base_ag_common.php");
+require(__DIR__ . "/base_conf.php");
+include(__DIR__ . "/includes/base_constants.inc.php");
+include(__DIR__ . "/includes/base_include.inc.php");
+include_once(__DIR__ . "/includes/base_action.inc.php");
+include_once(__DIR__ . "/base_db_common.php");
+include_once(__DIR__ . "/base_common.php");
+include_once(__DIR__ . "/base_qry_common.php");
+include_once(__DIR__ . "/base_ag_common.php");
 
 ($debug_time_mode >= 1) ? $et = new EventTiming($debug_time_mode) : '';
 $cs = new CriteriaState("base_ag_main.php");
@@ -349,7 +349,7 @@ if ( is_numeric($submit) )
             "WHERE acid_event.cid > '0' AND ag_id = '".$ag_id."'";
         $printing_ag = true;
         $ag = $ag_id;
-        include("$BASE_path/base_qry_sqlcalls.php");
+        include(__DIR__ . "/base_qry_sqlcalls.php");
     }
 
     $qs->SaveState();

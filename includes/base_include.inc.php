@@ -19,19 +19,19 @@
  ********************************************************************************
  */
 defined( '_BASE_INC' ) or die( 'Accessing this file directly is not allowed.' );
-include_once("$BASE_path/includes/base_db.inc.php");
-include_once("$BASE_path/includes/base_output_html.inc.php");
-include_once("$BASE_path/includes/base_state_common.inc.php");
-include_once("$BASE_path/includes/base_auth.inc.php");
-include_once("$BASE_path/includes/base_user.inc.php");
-include_once("$BASE_path/includes/base_state_query.inc.php");
-include_once("$BASE_path/includes/base_state_criteria.inc.php");
-include_once("$BASE_path/includes/base_output_query.inc.php");
-include_once("$BASE_path/includes/base_log_error.inc.php");
-include_once("$BASE_path/includes/base_log_timing.inc.php");
-include_once("$BASE_path/includes/base_action.inc.php");
-include_once("$BASE_path/base_common.php");
-include_once("$BASE_path/includes/base_cache.inc.php");
-include_once("$BASE_path/includes/base_net.inc.php");
-include_once("$BASE_path/includes/base_signature.inc.php");
+include_once(__DIR__ . "/../includes/base_db.inc.php");
+include_once(__DIR__ . "/../includes/base_output_html.inc.php");
+include_once(__DIR__ . "/../includes/base_state_common.inc.php");
+include_once(__DIR__ . "/../includes/base_auth.inc.php");
+include_once(__DIR__ . "/../includes/base_user.inc.php");
+include_once(__DIR__ . "/../includes/base_state_query.inc.php");
+include_once(__DIR__ . "/../includes/base_state_criteria.inc.php");
+include_once(__DIR__ . "/../includes/base_output_query.inc.php");
+include_once(__DIR__ . "/../includes/base_log_error.inc.php");
+include_once(__DIR__ . "/../includes/base_log_timing.inc.php");
+include_once(__DIR__ . "/../includes/base_action.inc.php");
+include_once(__DIR__ . "/../base_common.php");
+include_once(__DIR__ . "/../includes/base_cache.inc.php");
+include_once(__DIR__ . "/../includes/base_net.inc.php");
+include_once(__DIR__ . "/../includes/base_signature.inc.php");
 ?>

@@ -1,9 +1,9 @@
 <?php
 
 
-include_once ("base_conf.php");
-include_once ("$BASE_path/includes/base_constants.inc.php");
-include_once ("$BASE_path/includes/base_include.inc.php");
+include_once (__DIR__ . "/base_conf.php");
+include_once (__DIR__ . "/includes/base_constants.inc.php");
+include_once (__DIR__ . "/includes/base_include.inc.php");
 
 
 $rv = false;

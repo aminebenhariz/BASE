@@ -21,7 +21,6 @@
  */
 session_start();
 
-$BASE_path = "..";  // Set this since we don't have a base_conf.php
 define( "_BASE_INC", 1 );
 $BASE_InstallID = 1;
 

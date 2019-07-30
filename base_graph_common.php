@@ -19,10 +19,10 @@
  ********************************************************************************
  */
 
-include_once("base_conf.php");
-include_once("$BASE_path/base_qry_common.php");
-include_once("$BASE_path/includes/base_signature.inc.php");
-include_once("$BASE_path/includes/base_iso3166.inc.php");
+include_once(__DIR__ . "/base_conf.php");
+include_once(__DIR__ . "/base_qry_common.php");
+include_once(__DIR__ . "/includes/base_signature.inc.php");
+include_once(__DIR__ . "/includes/base_iso3166.inc.php");
 
 // Some colors to be used in graphs.
 $named_colors = array('aliceblue','antiquewhite','aqua','aquamarine','azure','beige','bisque','black','blanchedalmond','blue','blueviolet','brown','burlywood','cadetblue','chartreuse','chocolate','coral','cornflowerblue','cornsilk','crimson','cyan','darkblue','darkcyan','darkgoldenrod','darkdray','darkgreen','darkhaki','darkorange','darkolivegreen','darkmagenta','darkorchid','darkred','darksalmon','darkseagreen','darkviolet','deeppink','deepskyblue','dimgray','dodgerblue','firebrick','floralwhite','forestgreen','fuchsia','gainsboro','ghostwhite','gold','goldenrod','gray','green','greenyellow','indianred','indigo','ivory');

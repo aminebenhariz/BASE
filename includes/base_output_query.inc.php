@@ -23,7 +23,7 @@
  **/
 defined( '_BASE_INC' ) or die( 'Accessing this file directly is not allowed.' );
 
-include_once("$BASE_path/includes/base_constants.inc.php");
+include_once(__DIR__ . "/../includes/base_constants.inc.php");
 
 class QueryResultsOutput
 {

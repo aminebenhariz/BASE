@@ -23,12 +23,12 @@
  ********************************************************************************
  */
 
-include_once ("base_conf.php");
-include ("$BASE_path/includes/base_constants.inc.php");
-include ("$BASE_path/includes/base_include.inc.php");
-include_once ("$BASE_path/base_db_common.php");
-include_once ("$BASE_path/base_qry_common.php");
-include_once ("$BASE_path/base_stat_common.php");
+include_once (__DIR__ . "/base_conf.php");
+include (__DIR__ . "/includes/base_constants.inc.php");
+include (__DIR__ . "/includes/base_include.inc.php");
+include_once (__DIR__ . "/base_db_common.php");
+include_once (__DIR__ . "/base_qry_common.php");
+include_once (__DIR__ . "/base_stat_common.php");
 
 ($debug_time_mode >= 1) ? $et = new EventTiming($debug_time_mode) : '';
 $cs = new CriteriaState("base_stat_alerts.php");

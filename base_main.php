@@ -42,16 +42,16 @@
  */
 
 $start = time();
-require("base_conf.php");
-include_once("$BASE_path/includes/base_auth.inc.php");
-include_once("$BASE_path/includes/base_db.inc.php");
-include_once("$BASE_path/includes/base_output_html.inc.php");
-include_once("$BASE_path/base_common.php");
-include_once("$BASE_path/base_db_common.php");
-include_once("$BASE_path/includes/base_cache.inc.php");
-include_once("$BASE_path/includes/base_state_criteria.inc.php");
-include_once("$BASE_path/includes/base_log_error.inc.php");
-include_once("$BASE_path/includes/base_log_timing.inc.php");
+require(__DIR__ . "/base_conf.php");
+include_once(__DIR__ . "/includes/base_auth.inc.php");
+include_once(__DIR__ . "/includes/base_db.inc.php");
+include_once(__DIR__ . "/includes/base_output_html.inc.php");
+include_once(__DIR__ . "/base_common.php");
+include_once(__DIR__ . "/base_db_common.php");
+include_once(__DIR__ . "/includes/base_cache.inc.php");
+include_once(__DIR__ . "/includes/base_state_criteria.inc.php");
+include_once(__DIR__ . "/includes/base_log_error.inc.php");
+include_once(__DIR__ . "/includes/base_log_timing.inc.php");
 
 RegisterGlobalState();
 
@@ -326,7 +326,7 @@ if ($tmp_str != "") {
 <p>
 <hr />
 <?php
-include("$BASE_path/base_footer.php");
+include(__DIR__ . "/base_footer.php");
 if (strlen($base_custom_footer) != 0) {
     include($base_custom_footer);
 }

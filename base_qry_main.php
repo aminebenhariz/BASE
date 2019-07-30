@@ -66,15 +66,15 @@
  * $action_lst[]: array of (sid,cid) of all alerts on screen
  */
 
-include("base_conf.php");
-include("$BASE_path/includes/base_constants.inc.php");
-include("$BASE_path/includes/base_include.inc.php");
+include(__DIR__ . "/base_conf.php");
+include(__DIR__ . "/includes/base_constants.inc.php");
+include(__DIR__ . "/includes/base_include.inc.php");
 
-include_once("$BASE_path/includes/base_action.inc.php");
-include_once("$BASE_path/base_db_common.php");
-include_once("$BASE_path/base_common.php");
-include_once("$BASE_path/base_ag_common.php");
-include_once("$BASE_path/base_qry_common.php");
+include_once(__DIR__ . "/includes/base_action.inc.php");
+include_once(__DIR__ . "/base_db_common.php");
+include_once(__DIR__ . "/base_common.php");
+include_once(__DIR__ . "/base_ag_common.php");
+include_once(__DIR__ . "/base_qry_common.php");
 
 $et = new EventTiming($debug_time_mode);
 $cs = new CriteriaState("base_qry_main.php", "&amp;new=1&amp;submit="._QUERYDBP);
@@ -193,7 +193,7 @@ $printing_ag = false;
         ($submit == _NOLAYER4)
     )
     {
-        include("$BASE_path/base_qry_form.php");
+        include(__DIR__ . "/base_qry_form.php");
     }
     /* Run the SQL Query and get results */
     elseif ( $submit == _QUERYDB || $submit == _QUERYDBP ||
@@ -230,12 +230,12 @@ $printing_ag = false;
         $et->Mark("Alert Action");
 
         if ( $debug_mode > 0 ) ErrorMessage("Initial/Canned Query or Sort Clicked");
-        include("$BASE_path/base_qry_sqlcalls.php");
+        include(__DIR__ . "/base_qry_sqlcalls.php");
     }
     /* Return the input form to get more criteria from user */
     else
     {
-        include("$BASE_path/base_qry_form.php");
+        include(__DIR__ . "/base_qry_form.php");
     }
 
 

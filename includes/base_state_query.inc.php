@@ -24,11 +24,11 @@
  **/
 defined( '_BASE_INC' ) or die( 'Accessing this file directly is not allowed.' );
 
-include_once("$BASE_path/base_common.php");
-include_once("$BASE_path/includes/base_db.inc.php");
-include_once("$BASE_path/includes/base_constants.inc.php");
-include_once("$BASE_path/includes/base_action.inc.php");
-// include_once("$BASE_path/includes/base_capabilities.php"); //Commented out by Kevin for testing
+include_once(__DIR__ . "/../base_common.php");
+include_once(__DIR__ . "/../includes/base_db.inc.php");
+include_once(__DIR__ . "/../includes/base_constants.inc.php");
+include_once(__DIR__ . "/../includes/base_action.inc.php");
+// include_once(__DIR__ . "/../includes/base_capabilities.php"); //Commented out by Kevin for testing
 
 class QueryState
 {

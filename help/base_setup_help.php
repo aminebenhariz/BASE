@@ -19,21 +19,14 @@
  ********************************************************************************
  */
 
-if (file_exists('base_conf.php'))
+
+if (file_exists(__DIR__ . "/../base_conf.php"))
 {
-    include("base_conf.php");
-}
-elseif (file_exists('../base_conf.php'))
-{
-    include("../base_conf.php");
-}
-elseif (file_exists("$BASE_path/base_conf.php"))
-{
-    include("$BASE_path/base_conf.php");
+    include(__DIR__ . "/../base_conf.php");
 }
 else
 {
-    include ("../base_conf.php.dist");
+    include (__DIR__ . "/../base_conf.php.dist");
 }
 
 
@@ -41,8 +34,7 @@ else
 
 echo '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">' . "\n\n" .
     '<!-- Basic Analysis and Security Engine (BASE) ' . $BASE_VERSION . ' -->' . "\n" .
-    '<!-- BASE_path = ' . $BASE_path . "\n" .
-    '     BASE_urlpath = ' . $BASE_urlpath .  "\n" .
+    '<!-- BASE_urlpath = ' . $BASE_urlpath .  "\n" .
     '     BASE_VERSION = ' . $BASE_VERSION .  "\n" .
     '-->' . "\n" .
     '<HTML> ' . "\n" .

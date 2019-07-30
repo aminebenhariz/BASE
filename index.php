@@ -29,10 +29,10 @@ if (!file_exists('base_conf.php') || filesize('base_conf.php') < 10) {
     die();
 }
 
-require("base_conf.php");
-include("$BASE_path/includes/base_include.inc.php");
-include_once("$BASE_path/base_db_common.php");
-include_once("$BASE_path/base_common.php");
+require(__DIR__ . "/base_conf.php");
+include(__DIR__ . "/includes/base_include.inc.php");
+include_once(__DIR__ . "/base_db_common.php");
+include_once(__DIR__ . "/base_common.php");
 
 $errorMsg      = "";
 $displayError  = 0;
@@ -97,7 +97,7 @@ if ($displayError == 1)
     </table>
 </form>
 <?php
-include("$BASE_path/base_footer.php");
+include(__DIR__ . "/base_footer.php");
 ?>
 </body>
 </html>
