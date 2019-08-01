@@ -301,7 +301,7 @@ DEFINE('_ERRSQLDBTYPE','指定的数据库类型无效');
 DEFINE('_ERRSQLDBTYPEINFO1','变量 <CODE>\$DBtype</CODE> 在 
 <CODE>base_conf.php</CODE> 被设置成无法认出的数据库类型 ');
 DEFINE('_ERRSQLDBTYPEINFO2','只支持以下数据库系统: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

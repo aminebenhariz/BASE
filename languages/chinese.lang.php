@@ -291,7 +291,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>檢查資料庫中函式庫可用性 <CODE>$DBlib_
 DEFINE('_ERRSQLDBTYPE','指定了不合法的資料庫型態');
 DEFINE('_ERRSQLDBTYPEINFO1','變數 <CODE>\$DBtype</CODE> 在 <CODE>base_conf.php</CODE> 被設成不認識的資料庫型態 ');
 DEFINE('_ERRSQLDBTYPEINFO2','只有下列的資料庫被支援: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

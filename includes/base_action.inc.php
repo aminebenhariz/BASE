@@ -1743,7 +1743,7 @@ function PurgeAlert($sid, $cid, $db)
     $del_cnt = 0;
 
     if ( ($GLOBALS['use_referential_integrity'] == 1) &&
-        ($GLOBALS['DBtype'] != "mysql") )
+        ($GLOBALS['DBtype'] != "mysqli") )
         $del_table_list = array ("event");
 
     for ( $k = 0; $k < count($del_table_list); $k++ )

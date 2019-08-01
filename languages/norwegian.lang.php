@@ -293,7 +293,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>Check the DB abstraction library variable <CODE>$D
 DEFINE('_ERRSQLDBTYPE','Invalid Database Type Specified');
 DEFINE('_ERRSQLDBTYPEINFO1','The variable <CODE>\$DBtype</CODE> in <CODE>base_conf.php</CODE> was set to the unrecognized database type of ');
 DEFINE('_ERRSQLDBTYPEINFO2','Only the following databases are supported: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

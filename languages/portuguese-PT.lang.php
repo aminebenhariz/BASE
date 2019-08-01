@@ -298,7 +298,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>Verifique a variável da lib de abstração de BD 
 DEFINE('_ERRSQLDBTYPE','Tipo de Base de Dados Inválido Especificado');
 DEFINE('_ERRSQLDBTYPEINFO1','A variável <CODE>\$DBtype</CODE> em <CODE>base_conf.php</CODE> foi selecionada para o tipo não reconhecido de ');
 DEFINE('_ERRSQLDBTYPEINFO2','Somente as seguintes base de dados são suportadas: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

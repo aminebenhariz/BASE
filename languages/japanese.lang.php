@@ -291,7 +291,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>データベース抽象ライブラリのパス�
 DEFINE('_ERRSQLDBTYPE','不正なデータベースタイプです');
 DEFINE('_ERRSQLDBTYPEINFO1','<CODE>\$DBtype</CODE> in <CODE>base_conf.php</CODE> が不正です');
 DEFINE('_ERRSQLDBTYPEINFO2','Only the following databases are supported: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

@@ -36,7 +36,7 @@ defined( '_BASE_INC' ) or die( 'Accessing this file directly is not allowed.' );
  ************************************************************************/
 function InitArray(&$a, $dim1, $dim2, $value)
 {
-    $a = "";
+    $a = [];
     /* determine the number of dimensions in the array */
     if ( $dim2 == 0 )   /* 1-dim */
         for ( $i = 0; $i < $dim1; $i++ )
@@ -181,7 +181,7 @@ function CleanVariable($item, $valid_data, $exception = "")
     if ( ($valid_data & VAR_SCORE) > 0 )
         $regex_mask = $regex_mask . "\-";
 
-    return ereg_replace("[^".$regex_mask."]", "", $item);
+    return preg_replace("/[^".$regex_mask."]/", "", $item);
 }
 
 /* ***********************************************************************

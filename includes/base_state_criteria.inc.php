@@ -245,14 +245,17 @@ function PushHistory()
     $_SESSION['back_list'] = $tmp_back_list;
     $_SESSION['back_list_cnt'] = $tmp_back_list_cnt;
 
-    $query_string = CleanVariable($_SERVER["QUERY_STRING"], VAR_PERIOD | VAR_DIGIT | VAR_PUNC | VAR_LETTER);
+    $query_string = '';
+    if (isset($_SERVER["QUERY_STRING"])) {
+        $query_string .= CleanVariable($_SERVER["QUERY_STRING"], VAR_PERIOD | VAR_DIGIT | VAR_PUNC | VAR_LETTER);
+    }
     if ( isset($_POST['caller']) ) $query_string .= "&amp;caller=".$_POST['caller'];
     if ( isset($_POST['num_result_rows']) ) $query_string .= "&amp;num_result_rows=".$_POST['num_result_rows'];
     if ( isset($_POST['sort_order']) ) $query_string .= "&amp;sort_order=".$_POST['sort_order'];
     if ( isset($_POST['current_view']) ) $query_string .= "&amp;current_view=".$_POST['current_view'];
     if ( isset($_POST['submit']) ) $query_string .= "&amp;submit=".$_POST['submit'];
 
-    $query_string = ereg_replace("back=1&", "", CleanVariable($query_string, VAR_PERIOD | VAR_DIGIT | VAR_PUNC | VAR_LETTER));
+    $query_string = preg_replace("/back=1&/", "", CleanVariable($query_string, VAR_PERIOD | VAR_DIGIT | VAR_PUNC | VAR_LETTER));
 
     ++$_SESSION['back_list_cnt'];
     $_SESSION['back_list'][$_SESSION['back_list_cnt']] =

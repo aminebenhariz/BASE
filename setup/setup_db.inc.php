@@ -45,7 +45,7 @@ function CreateBASEAG($db) {
     }
 
     if ( !$tblBaseAG_present ) {
-        if ( $db->DB_type == "mysql" ) {
+        if ( $db->DB_type == "mysqli" ) {
             $sql = 'CREATE TABLE acid_ag ( ag_id               INT           UNSIGNED NOT NULL AUTO_INCREMENT,
                                           ag_name             VARCHAR(40),
                                           ag_desc             TEXT,
@@ -114,7 +114,7 @@ function CreateBASEAG($db) {
     }
 
     if ( !$tblBaseAGAlert_present ) {
-        if ( $db->DB_type == "mysql" ) {
+        if ( $db->DB_type == "mysqli" ) {
             $sql = 'CREATE TABLE acid_ag_alert( ag_id               INT           UNSIGNED NOT NULL,
                                                ag_sid              INT           UNSIGNED NOT NULL,
                                                ag_cid              INT           UNSIGNED NOT NULL,
@@ -151,7 +151,7 @@ function CreateBASEAG($db) {
     }
 
     if ( !$tblBaseIPCache_present ) {
-        if ( $db->DB_type == "mysql" ) {
+        if ( $db->DB_type == "mysqli" ) {
             $sql = 'CREATE TABLE acid_ip_cache( ipc_ip                  INT UNSIGNED NOT NULL,
                                                ipc_fqdn                VARCHAR(50),
                                                ipc_dns_timestamp       DATETIME,
@@ -193,7 +193,7 @@ function CreateBASEAG($db) {
     }
 
     if ( !$tblBaseEvent_present ) {
-        if ( $db->DB_type == "mysql" ) {
+        if ( $db->DB_type == "mysqli" ) {
             if ( $db->baseGetDBversion() < 100 )
                 $sig_ddl = "signature      VARCHAR(255) NOT NULL,";
             else
@@ -319,7 +319,7 @@ function CreateBASEAG($db) {
 
     /* Added for base_roles and base_users -- Kevin */
     if ( !$tblBaseRoles_present ) {
-        if ( $db->DB_type == "mysql" ) {
+        if ( $db->DB_type == "mysqli" ) {
             $sql = 'CREATE TABLE base_roles ( role_id           int(11)         NOT NULL,
                                                 role_name         varchar(20)     NOT NULL,
                                                 role_desc         varchar(75)     NOT NULL,
@@ -385,7 +385,7 @@ function CreateBASEAG($db) {
     }
 
     if ( !$tblBaseUsers_present ) {
-        if ( $db->DB_type == "mysql" ) {
+        if ( $db->DB_type == "mysqli" ) {
             $sql = 'CREATE TABLE base_users ( usr_id            int(11)          NOT NULL,
                                                 usr_login         varchar(25)      NOT NULL,
                                                 usr_pwd           varchar(32)      NOT NULL,

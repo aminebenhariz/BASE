@@ -143,7 +143,7 @@ function PrintPortscanEvents($db, $ip)
                 $color="FFFFFF";
             }
 
-            $contents = ereg_replace("  ", " ", $contents);
+            $contents = preg_replace("/ {2}/", " ", $contents);
             $elements = explode(" ", $contents);
 
             echo '<tr bgcolor="'.$color.'"><td align="center">'.

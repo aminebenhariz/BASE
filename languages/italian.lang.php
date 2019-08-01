@@ -292,7 +292,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>Controllare la variabile di astrazione DB <CODE>$D
 DEFINE('_ERRSQLDBTYPE','Tipo Database specificato non valido');
 DEFINE('_ERRSQLDBTYPEINFO1','La variabile <CODE>\$DBtype</CODE> in <CODE>base_conf.php</CODE> è impostata al tipo sconosciuto di database ');
 DEFINE('_ERRSQLDBTYPEINFO2','Solo i seguenti database sono supportati: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

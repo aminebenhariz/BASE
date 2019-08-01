@@ -291,7 +291,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>Periksalah variabel libari niskala DB <CODE>$DBlib
 DEFINE('_ERRSQLDBTYPE','Jenis database yang ditetapkan tidak valid');
 DEFINE('_ERRSQLDBTYPEINFO1','Variabel <CODE>\$DBtype</CODE> pada <CODE>base_conf.php</CODE> ditetapkan pada jenis database yang tidak dikenal. ');
 DEFINE('_ERRSQLDBTYPEINFO2','Hanya jenis database yang berikut didukung oleh BASE: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

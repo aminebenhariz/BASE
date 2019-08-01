@@ -293,7 +293,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>Ïðîâåðüòå ïåðåìåííóþ àáñòð
 DEFINE('_ERRSQLDBTYPE','Óêàçàí íåâåðíûé òèï ÁÄ');
 DEFINE('_ERRSQLDBTYPEINFO1','Ïåðåìåííàÿ <CODE>\$DBtype</CODE> â <CODE>base_conf.php</CODE> óñòàíîâëåíà â íåðàñïîçíàâàåìîå çíà÷åíèå òèïà ÁÄ ');
 DEFINE('_ERRSQLDBTYPEINFO2','Ïîääåðæèâàþòñÿ òîëüêî ñëåäóþùèå ÁÄ: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

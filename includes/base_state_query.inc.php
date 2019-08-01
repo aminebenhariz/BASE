@@ -38,9 +38,9 @@ class QueryState
     var $current_sort_order = "";
     var $current_view = -1;
     var $show_rows_on_screen = -1;
-    var $valid_action_list = NULL;
+    var $valid_action_list = [];
     var $action;
-    var $valid_action_op_list = NULL;
+    var $valid_action_op_list = [];
     var $action_arg;
     var $action_lst;
     var $action_chk_lst = NULL;
@@ -132,13 +132,13 @@ class QueryState
             // We do nothing here because we are looking at the archive tables
             // We do not want to add the archive actions to this list -- Kevin
         } else {
-            $this->valid_action_list[ count($this->valid_action_list) ] = $action;
+            $this->valid_action_list[] = $action;
         }
     }
 
     function AddValidActionOp($action_op)
     {
-        $this->valid_action_op_list[ count($this->valid_action_op_list) ] = $action_op;
+        $this->valid_action_op_list[] = $action_op;
     }
 
     function SetActionSQL($sql)
@@ -293,8 +293,9 @@ class QueryState
 
     function PrintAlertActionButtons()
     {
-        if ( $this->valid_action_list == NULL )
+        if (empty($this->valid_action_list)){
             return;
+        }
 
         echo "\n\n<!-- Alert Action Buttons -->\n".
             "<CENTER>\n".

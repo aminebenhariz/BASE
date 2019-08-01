@@ -292,7 +292,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>&Uuml;berpr&uuml;fen Sie die Variable f&uuml; die 
 DEFINE('_ERRSQLDBTYPE','Ung&uuml;ltiger Datenbanktyp');
 DEFINE('_ERRSQLDBTYPEINFO1','Die Variable <CODE>\$DBtype</CODE> in der Datei <CODE>base_conf.php</CODE> wurde auf eine nicht unterst&uuml;tzte Datenbank gesetzt: ');
 DEFINE('_ERRSQLDBTYPEINFO2','Nur die folgenden Datenbanken werden unterst&uuml;tzt: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

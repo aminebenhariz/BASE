@@ -312,7 +312,7 @@ function UniqueLinkCnt($db, $join = "", $where = "")
     if (!stristr($where, "WHERE") && $where != "")
         $where = " WHERE $where ";
 
-    if ( $db->DB_type == "mysql" )
+    if ( $db->DB_type == "mysqli" )
     {
         if ( $join == "" && $where == "")
             $result = $db->baseExecute("SELECT COUNT(DISTINCT acid_event.ip_src, acid_event.ip_dst, acid_event.ip_proto) FROM acid_event");

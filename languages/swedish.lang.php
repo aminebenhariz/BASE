@@ -292,7 +292,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>Kontrollera DB abstraktion bibliotek variabel <COD
 DEFINE('_ERRSQLDBTYPE','Ogiltig Databas typ Specifierad');
 DEFINE('_ERRSQLDBTYPEINFO1','variabel <CODE>\$DBtype</CODE> i <CODE>base_conf.php</CODE> var satt till anonym databas typ av ');
 DEFINE('_ERRSQLDBTYPEINFO2','Endast följande databaser är giltiga: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
                 Oracle        : \'oci8\'

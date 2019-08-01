@@ -261,7 +261,7 @@ while ( ($myrow = $result->baseFetchRow()) && ($i < $qs->GetDisplayRowCnt() ) )
             {
                 if ( ereg("[0-9]*\.[0-9]*\.[0-9]*\.[0-9]", $ps_element)  )
                 {
-                    $ps_element = ereg_replace (":", "", $ps_element);
+                    $ps_element = preg_replace ("/:/", "", $ps_element);
                     qroPrintEntry("<A HREF=\"base_stat_ipaddr.php?ip=".$ps_element."&amp;netmask=32\">".
                         $ps_element."</A>");
                 }

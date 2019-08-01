@@ -107,7 +107,7 @@ function returnContents()
     
     /* The type of underlying alert database
      * 
-     *  MySQL       : \'mysql\'
+     *  MySQL       : \'mysqli\'
      *  PostgresSQL : \'postgres\'
      *  MS SQL Server : \'mssql\'
      *  Oracle      : \'oci8\'

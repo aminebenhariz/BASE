@@ -82,12 +82,12 @@ $DBlib_path = '';
 
 /* The type of underlying alert database
  *
- *  MySQL       : 'mysql'
+ *  MySQL       : 'mysqli'
  *  PostgresSQL : 'postgres'
  *  MS SQL Server : 'mssql'
  *  Oracle      : 'oci8'
  */
-$DBtype = 'mysql';
+$DBtype = 'mysqli';
 
 /* Alert DB connection parameters
  *   - $alert_dbname   : MySQL database name of Snort alert DB

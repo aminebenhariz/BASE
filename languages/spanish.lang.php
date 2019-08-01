@@ -291,7 +291,7 @@ DEFINE('_ERRSQLDBALLOAD2','<P>Por favor compruebe la variable de la biblioteca d
 DEFINE('_ERRSQLDBTYPE','Tipo de DB desconocido');
 DEFINE('_ERRSQLDBTYPEINFO1','La variable <CODE>\$DBtype</CODE> en <CODE>base_conf.php</CODE> tiene el tipo desconocido de ');
 DEFINE('_ERRSQLDBTYPEINFO2','Solo los tipos siguientes son soportados: <PRE>
-                MySQL         : \'mysql\'
+                MySQL         : \'mysqli\'
                 PostgreSQL    : \'postgres\'
                 MS SQL Server : \'mssql\'
              </PRE>');

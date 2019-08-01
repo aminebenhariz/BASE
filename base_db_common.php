@@ -80,9 +80,9 @@ function verify_php_build($DBtype)
             " "._ERRPHPERROR2."</FONT>";
     }
 
-    if ( ($DBtype == "mysql") || ($DBtype == "mysqlt") )
+    if ( ($DBtype == "mysqli") || ($DBtype == "mysqlt") )
     {
-        if ( !(function_exists("mysql_connect")) )
+        if ( !(function_exists("mysqli_connect")) )
         {
             return "<FONT COLOR=\"#FF0000\">"._ERRPHPERROR."</FONT>: "._ERRPHPMYSQLSUP;
         }

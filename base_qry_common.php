@@ -124,7 +124,7 @@ function DateTimeRows2sql($field, $cnt, &$s_sql)
     GLOBAL $db;
     $tmp2 = "";
     $allempty = FALSE;
-    $time_field = array("mysql"    => ":",
+    $time_field = array("mysqli"    => ":",
         "mssql"    => ":",
         "postgres" => ":"
     );
@@ -775,8 +775,8 @@ function ProcessCriteria()
             /* if have chosen the address type to be both source and destination */
             if ( ereg("ip_both", $tmp) )
             {
-                $tmp_src = ereg_replace("ip_both","ip_src",$tmp);
-                $tmp_dst = ereg_replace("ip_both","ip_dst",$tmp);
+                $tmp_src = preg_replace("/ip_both/","ip_src", $tmp);
+                $tmp_dst = preg_replace("/ip_both/","ip_dst", $tmp);
 
                 if ( $ip_addr[$i][2] == '=' )
                     $tmp = "(".$tmp_src.') OR ('.$tmp_dst.')';

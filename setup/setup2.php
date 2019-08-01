@@ -136,7 +136,7 @@ if (@$_GET['action'] == "check")
     <center><table width="50%" border=1 class ="query">
             <tr><td colspan=2 align="center" class="setupTitle">Step 2 of 5</td><tr>
             <tr><td class="setupKey" width="50%">Pick a Database type:</td><td class="setupValue"><select name="dbtype">
-                        <option value="mysql" <?php if ($_SESSION['dbtype'] == 'mysql') echo "selected";?>>MySQL
+                        <option value="mysqli" <?php if ($_SESSION['dbtype'] == 'mysqli') echo "selected";?>>MySQL
                         <option value="postgres" <?php if ($_SESSION['dbtype'] == 'postgres') echo "selected";?>>PostgreSQL
                         <option value="mssql" <?php if ($_SESSION['dbtype'] == 'mssql') echo "selected";?>>Microsoft SQL Server
                         <option value="oci8" <?php if ($_SESSION['dbtype'] == 'oci8') echo "selected";?>>Oracle
